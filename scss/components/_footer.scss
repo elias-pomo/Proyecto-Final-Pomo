@@ -1,0 +1,99 @@
+footer {
+    background: #170141;
+    background: linear-gradient(359deg, #170141 10%, #867008 130%);
+    background: -webkit-linear-gradient(359deg, #170141 10%, #867008 130%);
+    background: -moz-linear-gradient(359deg, #170141 10%, #867008 130%);
+    border-top: 5px solid rgb(255, 255, 255);
+    opacity: 0.8;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logof {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .botonend {
+        &:link {
+            color: white;
+            border: 1px solid white;
+            box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            padding: 20px;
+            text-shadow: 1px 1px 1px black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        &:visited {
+            color: white;
+            border: 1px solid white;
+            box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            padding: 20px;
+            text-shadow: 1px 1px 1px black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        &:hover {
+            color: black;
+            border: 1px solid white;
+            box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 300;
+            background-color: white;
+        }
+
+        &:active {
+            color: black;
+            border: 1px solid white;
+            box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0px 3px 23px 2px rgba(255, 255, 255, 0.75);
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 300;
+            background-color: white;
+        }
+    }
+
+    .redes {
+
+        display: flex;
+        align-items: end;
+        margin: 50px;
+        justify-content: end;
+
+        a {
+            img {
+                display: flex;
+                justify-content: space-between;
+                border-radius: 20px;
+                margin: 20px;
+                height: 75px;
+                width: 75px;
+                box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                -moz-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+            }
+        }
+    }
+}

@@ -1,0 +1,425 @@
+@media screen and (max-width: 1596px) {
+    .main-index .galeria {
+        height: auto;
+    }
+
+    .main-index .galeria .tarjetas .oso {
+        display: none;
+    }
+
+    .main-index  .galeria .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas en pantallas medianas */
+    }
+
+    .main-index  .comida .comida1 {
+        flex-direction: row;
+        /* Mantiene la dirección en fila */
+        justify-content: space-between;
+        /* Espaciado entre elementos */
+        gap: 25px;
+    }
+
+    .main-index .comida .comida1 div {
+        width: 45%;
+    }
+
+    .main-index .opinioness {
+        height: 900px;
+    }
+
+    .main-index .opinioness .opiniones {
+        height: 750px;
+    }
+
+    .main-salon .galeria-salon {
+        height: 1500px;
+    }
+
+    .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra p {
+        font-size: 20px;
+    }
+
+    .main-salon img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .main-salon {
+        height: 6600px;
+    }
+
+    header {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: start;
+        height: 150px;
+    }
+
+    header nav ul li a:hover,
+    a:active {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    header nav ul li a:link,
+    a:visited {
+        height: 50px;
+        font-size: 15px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    footer .botonend:hover,
+    .botonend:active {
+        font-size: 15px;
+    }
+
+    footer .botonend:link,
+    .botonend:visited {
+        font-size: 15px;
+    }
+
+
+    .main-index .comida {
+        height: 1000px;
+    }
+
+    .main-index .comida .comida1 .texto2 {
+        display: none;
+    }
+
+    .main-index .opinioness {
+        height: 1150px;
+    }
+
+    .main-index .opinioness .opiniones {
+        background-size: cover;
+        height: 1100px;
+        width: 80%;
+    }
+
+    .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra p {
+        font-size: 17px;
+    }
+
+    .main-salon .hero-salon {
+        height: 200px;
+    }
+
+    .main-salon .hero-salon p {
+        display: none;
+    }
+
+    .main-salon .hero-salon h1 {
+        font-size: 45px;
+    }
+
+
+    .main-salon .galeria-salon2 .carta-salon div p {
+        height: 700px;
+        width: 400px;
+    }
+
+    .main-salon .galeria-salon2 .carta-salon p {
+        font-size: 23px;
+    }
+
+    .main-salon .info-salon {
+        height: 2000px;
+        background-size: cover;
+    }
+
+    .main-salon .galeria-salon {
+        height: 2200px;
+    }
+
+    .main-salon .info-salon .info-salon-0 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-1 {
+        height: 600px;
+        font-size: 15px;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-2 {
+        height: 600px;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-3 {
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width: 775px) {
+    header div {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    header img {
+        width: 150px;
+
+        height: auto;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        /* Navegación vertical */
+        padding: 0;
+    }
+
+    header nav ul li {
+        padding: 10px 0;
+        /* Espaciado vertical en los elementos de navegación */
+    }
+
+    .main-index .hero {
+        height: 400px;
+        /* Reduce la altura de la sección hero */
+    }
+
+    .main-index .hero h1 {
+        font-size: 40px;
+        /* Reduce el tamaño del texto */
+    }
+
+    .main-index .hero h2,
+    .hero p {
+        font-size: 30px;
+        /* Ajusta tamaño de h2 y p */
+    }
+
+    .main-index .galeria {
+        height: 1850px;
+        /* Permite que la galería ajuste su altura */
+        padding: 20px;
+        /* Añade espacio alrededor */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .main-index .tarjetas {
+        grid-template-columns: 1fr;
+        /* Muestra una tarjeta por fila en móviles */
+        margin: 0;
+        /* Elimina márgenes */
+
+    }
+
+    .main-index .info {
+        height: 1800px;
+    }
+
+    .main-index .info .tarjetas2 {
+        flex-direction: column;
+        /* Cambia a columna para tarjetas en móviles */
+        align-items: center;
+    }
+
+    .main-index .comida {
+        height: 1800px;
+    }
+
+    .main-index .comida .comida1 {
+        flex-direction: column;
+        /* Cambia a columna para la sección de comida */
+        margin: 0;
+        /* Elimina márgenes */
+    }
+
+    .main-index .comida .comida1 div {
+        width: 100%;
+        /* Ocupa el 100% del ancho en móviles */
+        margin-bottom: 20px;
+        /* Espaciado entre secciones */
+    }
+
+    .main-index .comida .comida1 .texto2 {
+        width: 100%;
+        
+        padding: 20px;
+        
+    }
+
+    .main-index .opinioness {
+        flex-direction: column;
+        height: 1600px;
+
+    }
+
+    .main-index .opinioness .opiniones {
+        height: 1400px;
+    }
+
+    .main-index .opinioness .opiniones .opiniones-container {
+        flex-direction: column;
+        /* Cambia a columna para contenedor de opiniones */
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        /* Cambia a columna en el footer */
+        height: auto;
+        /* Ajusta la altura */
+        align-items: center;
+    }
+
+    footer .redes {
+        justify-content: center;
+        /* Centra los íconos en el footer */
+    }
+
+    footer .redes a img {
+        width: 50px;
+        /* Reduce el tamaño de los íconos */
+        height: 50px;
+    }
+
+    .main-salon .galeria-salon {
+        height: 2000px;
+    }
+
+    .main-salon .galeria-salon h2 {
+        font-size: 30px;
+    }
+
+    .main-salon .info-salon {
+        height: 1000px;
+        background-size: cover;
+    }
+
+    .main-salon .info-salon .info-salon-0 p {
+        margin-top: 0px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 170px;
+
+    }
+
+    .main-index .galeria {
+        margin-top: 0px;
+        height: 2000px;
+    }
+
+    .main-salon .hero-salon {
+        height: 250px;
+    }
+
+    .main-salon .hero-salon h1 {
+        font-size: 45px;
+    }
+
+    .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra .tarjetas-muestra2 {
+        display: none;
+    }
+
+    .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra p {
+        font-size: 13px;
+    }
+
+    .main-salon .galeria-salon2 {
+        height: 1200px;
+    }
+
+    .main-salon .galeria-salon2 .carta-salon img {
+        display: none;
+    }
+
+    .main-salon .galeria-salon2 .carta-salon div p {
+        font-size: 20px;
+        width: 320px;
+    }
+
+    .main-salon {
+        height: 6900px;
+    }
+
+    .main-salon .info-salon {
+        background-size: cover;
+        height: 1700px;
+    }
+
+    .main-salon .info-salon .info-salon-0 {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-1 {
+        height: 850px;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-2 {
+        height: 850px;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-3 {
+        height: 850px;
+    }
+
+    .main-salon .opinioness {
+        height: 2000px;
+    }
+
+    .main-salon .opinioness .opiniones {
+        justify-content: space-between;
+        height: 1800px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .main-index {
+        height: 6000px;
+    }
+
+    .main-salon .opinioness {
+        background-color: #c300ff;
+        display: none;
+    }
+
+
+    .main-salon .info-salon {
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 3000px;
+    }
+
+    .main-salon .info-salon .info-salon-0 {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-1 {
+
+        height: 950px;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-2 {
+        height: 950px;
+    }
+
+    .main-salon .info-salon .info-salon-0 .info-salon-3 {
+        height: 950px;
+    }
+}

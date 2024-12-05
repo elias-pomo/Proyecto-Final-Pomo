@@ -1,0 +1,444 @@
+.main-servicios {
+    height: 5600px;
+    color: white;
+    background: #0b032c;
+    background: linear-gradient(91deg, #0b032c 50%, #dfba00 200%);
+    background: -webkit-linear-gradient(91deg, #0b032c 50%, #dfba00 200%);
+    background: -moz-linear-gradient(91deg, #0b032c 50%, #dfba00 200%);
+
+    .hero-servicios {
+        background-image: url(../img/servicios/hero-servicios.jpg);
+        height: 800px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            margin-top: 75px;
+            border: 6px double white;
+            background-color: #1b04355b;
+            width: 70%;
+
+            h1 {
+                font-size: 95px;
+                font-weight: 250;
+            }
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px black;
+            border: 6px double white;
+            background-color: #1b04355b;
+            width: 30%;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px black;
+            border-top: 3px solid white;
+            background-color: #0000005b;
+            width: 100%;
+        }
+    }
+
+    .info-servicios {
+        height: 500px;
+        border-bottom: 5px solid gold;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            padding: 5px;
+            margin: 30px;
+            background-color: #ffffffb0;
+            color: black;
+            font-weight: 300;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 15px;
+            box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+            font-weight: 250;
+            background-color: #000000b9;
+            border: 2px solid rgb(255, 255, 255);
+            width: 50%;
+        }
+    }
+
+    .servicios-infantiles {
+        height: 900px;
+        text-align: left;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 250;
+            background-color: #0000007a;
+            border-bottom: 2px solid white;
+        }
+
+        .tarjeta-infantil {
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+
+            .fiesta-infantil {
+                box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
+                border-radius: 25px;
+                height: 720px;
+                padding: 10px;
+                margin: 20px;
+                background-color: rgba(85, 0, 255, 0.348);
+
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 250;
+                    height: 60px;
+
+                }
+
+                h4 {
+                    font-size: 30px;
+                    height: 60px;
+                    font-weight: 350;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 150;
+                    height: 95px;
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 150;
+                }
+            }
+        }
+    }
+
+    .promo-infantil {
+        background-image: url(../img/servicios/servicio1.jpg);
+        background-size: cover;
+        height: 700px;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 250;
+            background-color: #0000007a;
+            border-bottom: 2px solid white;
+        }
+
+        .promos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            margin: 20px;
+
+            .promo1 {
+                margin-top: 20px;
+                border: 2px solid white;
+                height: 400px;
+                background-color: rgba(0, 0, 0, 0.589);
+                box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                border-radius: 25px;
+
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 250;
+                    height: 60px;
+                }
+
+                h4 {
+                    font-size: 30px;
+                    height: 60px;
+                    font-weight: 350;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 150;
+                    height: 95px;
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 150;
+                }
+            }
+
+            .promo2 {
+                border: 2px solid white;
+                height: 400px;
+                margin: 20px;
+                background-color: rgba(0, 0, 0, 0.589);
+                box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                border-radius: 25px;
+
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 250;
+                    height: 60px;
+                }
+
+                h4 {
+                    font-size: 30px;
+                    height: 60px;
+                    font-weight: 350;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 150;
+                    height: 95px;
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 150;
+                }
+            }
+
+            .promo3 {
+                height: 400px;
+                margin-top: 20px;
+                background-color: rgba(0, 0, 0, 0.589);
+                box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+                border-radius: 25px;
+
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 250;
+                    height: 60px;
+                }
+
+                h4 {
+                    font-size: 30px;
+                    height: 60px;
+                    font-weight: 350;
+
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 150;
+                    height: 95px;
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 150;
+                }
+            }
+        }
+    }
+
+    .boda {
+        background-image: url(../img/servicios/servicio2.jpg);
+        background-size: cover;
+        height: 750px;
+        display: flex;
+        justify-content: space-around;
+
+        .evento1 {
+            margin: 30px;
+            background-color: #00000092;
+            height: 670px;
+            box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            border-radius: 25px;
+
+            h3 {
+                text-align: center;
+                font-size: 40px;
+                font-weight: 250;
+                height: 70px;
+            }
+
+            h4 {
+                font-size: 30px;
+                height: 60px;
+                font-weight: 350;
+            }
+
+            p {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 150;
+                height: 95px;
+            }
+
+            h5 {
+                font-size: 20px;
+                font-weight: 150;
+            }
+        }
+
+        .evento2 {
+            margin: 30px;
+            background-color: #00000092;
+            height: 670px;
+            box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            border-radius: 25px;
+
+            h3 {
+                text-align: center;
+                font-size: 40px;
+                font-weight: 250;
+                height: 70px;
+            }
+
+            h4 {
+                font-size: 30px;
+                height: 60px;
+                font-weight: 350;
+            }
+
+            p {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 150;
+                height: 95px;
+            }
+
+            h5 {
+                font-size: 20px;
+                font-weight: 150;
+            }
+        }
+    }
+
+    .candy-servicios {
+        height: 800px;
+        background-image: url(../img/servicios/servicio3.jpg);
+        background-size: cover;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 250;
+            background-color: #0000007a;
+            border-bottom: 2px solid white;
+            margin-bottom: 50px;
+        }
+    }
+
+    .info-final-servicios {
+        height: 1150px;
+        background-image: url(../img/servicios/servicio4.jpg);
+        background-size: cover;
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 250;
+            background-color: #000000c5;
+            border-bottom: 2px solid white;
+            margin-bottom: 50px;
+        }
+
+        .flex-servicios {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .traer {
+                border: 2px solid white;
+                height: 200px;
+                background-color: #000000c5;
+
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 250;
+                    height: 60px;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 150;
+                }
+            }
+
+            .saber {
+                border: 2px solid white;
+                height: 600px;
+                background-color: #000000c5;
+
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 250;
+                    height: 60px;
+                }
+
+                h4 {
+                    font-size: 30px;
+                    height: 60px;
+                    font-weight: 350;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 150;
+                }
+            }
+
+            .aparte {
+                border: 2px solid white;
+                height: 200px;
+                background-color: #000000c5;
+
+                h3 {
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 250;
+                    height: 60px;
+                }
+
+                h4 {
+                    font-size: 30px;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 150;
+                }
+            }
+        }
+    }
+}

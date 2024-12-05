@@ -1,0 +1,338 @@
+
+.main-index {
+    .hero {
+        border-top: 5px solid gold;
+        text-align: center;
+        height: 700px;
+        background-image: url(../img/fondo-hero1.jpg);
+        background-size: cover;
+        background-attachment: local;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            color: white;
+            font-size: 70px;
+            text-shadow: 1px 2px 16px gold;
+        }
+
+        div {
+            h2 {
+                color: white;
+                font-size: 55px;
+                text-shadow: 1px 2px 16px gold;
+            }
+
+            p {
+                color: white;
+                font-weight: 300;
+                font-size: 55px;
+                text-shadow: 2px 3px 16px #170141;
+            }
+        }
+    }
+
+    .galeria {
+        background: #0b032c;
+        background: linear-gradient(269deg, #180235 50%, #dfba00 220%);
+        background: -webkit-linear-gradient(269deg, #180235 50%, #dfba00 220%);
+        background: -moz-linear-gradient(269deg, #180235 50%, #dfba00 220%);
+        border-top: 14px solid #f0dd09ff;
+
+        box-shadow: 10px 25px 5px -16px rgba(238, 255, 0, 0.28) inset;
+        -webkit-box-shadow: 10px 25px 5px -16px rgba(238, 255, 0, 0.28) inset;
+        -moz-box-shadow: 10px 25px 5px -16px rgba(238, 255, 0, 0.28) inset;
+
+        padding: 15px;
+        height: 1000px;
+        text-align: center;
+
+        .texto1 {
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            h2 {
+                color: white;
+                padding: 20px 5px 30px 5px;
+                font-family: "Newsreader", serif;
+                font-style: italic;
+                font-weight: 300;
+                text-shadow: 4px 4px 4px #f5af00ff;
+                font-size: 65px;
+            }
+
+            div {
+                p {
+                    color: white;
+                    padding: 0px;
+                    margin: 0px;
+                    font-weight: 300;
+                    font-size: 30px;
+
+                }
+            }
+        }
+
+        .tarjetas {
+            margin: 70px 0px 0px 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 600px;
+            border: 2px groove white;
+            gap: 5px;
+            position: relative;
+
+            .grid-item {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    position: absolute;
+                    color: white;
+                    background-color: #00000088;
+                    top: 560px;
+                }
+            }
+        }
+    }
+
+    .info {
+        background-image: url(../img/fondo-desenfoque.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 15px;
+        height: 800px;
+        border: 2px solid white;
+        width: 100%;
+        border-radius: 15px;
+        text-align: center;
+        align-items: center;
+        box-shadow: 3px 3px 50px -8px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 3px 3px 50px -8px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 3px 3px 50px -8px rgba(255, 255, 255, 1);
+
+        h2 {
+            padding: 10px 10px 50px 10px;
+            color: white;
+            font-size: 35px;
+            text-shadow: 2px 2px 2px #e4d9ff;
+        }
+
+        .tarjetas2 {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                background: #ffffff;
+                background: #ffffff;
+                background: #170141;
+                background: linear-gradient(269deg, #170141 20%, #9518da 160%);
+                background: -webkit-linear-gradient(269deg, #000000 20%, #9518da 160%);
+                background: -moz-linear-gradient(269deg, #000000 20%, #9518da 160%);
+                opacity: 80%;
+                margin: 20px;
+                border: thick double white;
+                box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+                -webkit-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+                -moz-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+                height: 500px;
+                width: 300px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+
+            h3 {
+                font-size: 35px;
+                padding: 30px 10px 50px 10px;
+                color: white;
+                text-shadow: 1px 1px 1px #e4d9ff;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                color: white;
+                text-shadow: none;
+                padding: 0px 10px 0px 10px;
+                font-weight: 250;
+                text-shadow: 1px 1px 1px #ffa0a5;
+            }
+        }
+    }
+}
+
+.comida {
+    background: #0b032c;
+    background: linear-gradient(91deg, #180235 50%, #dfba00 200%);
+    background: -webkit-linear-gradient(91deg, #180235 50%, #dfba00 200%);
+    background: -moz-linear-gradient(91deg, #180235 50%, #dfba00 200%);
+    height: 900px;
+    text-align: center;
+
+    h2 {
+        color: white;
+        text-shadow: 4px 4px 4px #ffa0a5;
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+    h3 {
+        color: white;
+        text-shadow: 2px 2px 2px #e48aff;
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .comida1 {
+        display: flex;
+        justify-content: space-between;
+        margin: 80px;
+        div {
+            text-align: center;
+            opacity: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 1px solid white;
+            box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+            -webkit-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+            -moz-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+            height: 700px;
+            width: 480px;
+            border-radius: 15px;
+    
+            img {
+                border-radius: 20px;
+                width: 100%;
+                height: 80%;
+            }
+    
+            p {
+                color: white;
+                font-size: 120%;
+                font-weight: 300;
+            }
+    
+            a {
+                text-decoration: none;
+                text-shadow: 1px 1px 1px black;
+                font-size: 28px;
+                background-color: #170141;
+                padding: 20px;
+                margin: 10px;
+                font-weight: 300;
+                text-align: center;
+                color: white;
+                border-radius: 5px;
+                border: 1px, solid, white;
+                box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                -moz-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                padding: 4px;
+            }
+        }
+    }
+
+
+
+    .texto2 {
+        background-image: url(../img/fondo-carta.png);
+        background-attachment: local;
+        background-repeat: round;
+        border: 1px solid white;
+        box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+        -webkit-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+        -moz-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+        border-radius: 35px;
+        padding: 10px;
+        font-weight: 450;
+        font-size: 100%;
+        color: black;
+        text-align: justify;
+        width: 368px;
+        height: 650px;
+        padding: 40px;
+    }
+}
+
+
+.opinioness {
+    background-image: url(../img/fondo-desenfoque2.jpg);
+    background-size: cover;
+    border-top: 5px solid white;
+    object-fit: cover;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .opiniones {
+        text-align: center;
+        padding: 50px 20px;
+        background: #000000;
+        background: linear-gradient(90deg, #000000 0%, #2f306a 80%);
+        background: -webkit-linear-gradient(90deg, #000000 0%, #2f306a 80%);
+        background: -moz-linear-gradient(90deg, #000000 0%, #2f306a 80%);
+        border: 6px groove #ffffff;
+        border-radius: 25px;
+        opacity: 90%;
+        height: 500px;
+
+        h2 {
+            font-size: 55px;
+            font-weight: 200;
+            margin-top: -35px;
+            margin-bottom: 60px;
+            color: white;
+        }
+
+        .opiniones-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .opinion {
+                background-color: rgb(0, 0, 0);
+                border-radius: 10px;
+                border: 3px groove #ffffff;
+                padding: 20px;
+                max-width: 500px;
+                text-align: left;
+
+                h3 {
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                    color: #c2b4b4;
+                }
+
+                .rating {
+                    color: #ffbc00;
+                    font-size: 1.1em;
+                }
+
+                p {
+                    font-size: 25px;
+                    font-weight: 300;
+                    line-height: 1.5;
+                    color: white;
+                }
+            }
+        }
+    }
+}

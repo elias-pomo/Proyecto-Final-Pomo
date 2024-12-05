@@ -1,0 +1,89 @@
+
+.main-formulario {
+    height: 1000px;
+    background-image: url(../img/servicios/servicio5.jpg);
+    background-size: cover;
+
+    .hero-formulario {
+        color: white;
+
+        .hero-1 {
+            background-color: #000000b5;
+            box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+            border-radius: 25px;
+
+            h1 {
+                font-weight: 250;
+                font-size: 60px;
+            }
+
+            h2 {
+                font-weight: 250;
+                font-size: 50px;
+            }
+
+            h3 {
+                font-weight: 250;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .container-formulario {
+        color: white;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        font-weight: 250;
+        background-color: #000000b5;
+        box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+        -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
+        border-radius: 25px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                color: white;
+                font-weight: 350;
+                font-size: 25px;
+                margin-bottom: 5px;
+            }
+
+            input {
+                font-size: 16px;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            textarea {
+                font-size: 16px;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                resize: vertical;
+            }
+
+            button {
+                padding: 12px;
+                font-size: 18px;
+                color: white;
+                background-color: #333;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &hover {
+                    background-color: #555;
+                }
+            }
+        }
+    }
+}

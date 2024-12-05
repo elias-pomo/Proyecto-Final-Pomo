@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+/* colores
+/* CSS HEX 
+--fuchsia: #ff00ffff;
+--gold: #ffd200ff;
+--rusian-violet: #220043ff;
+--aureolin: #f5e100ff;
+--dark-purple: #1e0925ff;
+--raisin-black-2: #1a1b25ff;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
