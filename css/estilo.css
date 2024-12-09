@@ -43,16 +43,17 @@ header img {
 header nav {
   height: 100px;
 }
-header nav .boton li {
-  font-weight: 100px;
-  padding: 80px 10px 10px 10px;
-  display: inline-flex;
-  justify-content: space-between;
-  flex-direction: row;
+header nav .boton {
+  display: flex;
   align-items: center;
-  margin: 10px;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
 }
-header nav .boton li a:hover {
+header nav .boton a {
+  margin: 30px;
+}
+header nav .boton a:hover {
   border: 2px solid white;
   box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
@@ -65,7 +66,7 @@ header nav .boton li a:hover {
   font-weight: 400;
   text-decoration: none;
 }
-header nav .boton li a:active {
+header nav .boton a:active {
   border: 2px solid white;
   box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
@@ -78,7 +79,7 @@ header nav .boton li a:active {
   font-weight: 400;
   text-decoration: none;
 }
-header nav .boton li a:link {
+header nav .boton a:link {
   border: 3px solid white;
   box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
@@ -90,7 +91,7 @@ header nav .boton li a:link {
   font-weight: 400;
   text-decoration: none;
 }
-header nav .boton li a:visited {
+header nav .boton a:visited {
   border: 3px solid white;
   box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
   -webkit-box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
@@ -1327,6 +1328,16 @@ footer .redes a img {
 }
 
 @media screen and (max-width: 1596px) {
+  header nav ul li a:hover,
+  a:active {
+    height: 50px;
+    font-size: 15px;
+  }
+  header nav ul li a:link,
+  a:visited {
+    height: 50px;
+    font-size: 15px;
+  }
   .main-index .galeria {
     height: auto;
   }
@@ -1362,8 +1373,86 @@ footer .redes a img {
   .main-salon img {
     width: 90%;
   }
+  .main-catering .candybar {
+    height: auto;
+  }
+  .main-catering .candybar .info-candybar img {
+    display: none;
+  }
+  .main-catering .info-catering .grid-catering .item-catering1 img {
+    width: 80%;
+  }
+  .main-catering .candybar .grid-catering2 .item-catering2 img {
+    width: 80%;
+  }
+  .main-catering .info-catering .info-catering1 .img-catering {
+    display: none;
+  }
+  .main-catering .info-catering .info-catering1 {
+    height: 500px;
+  }
+  .main-catering .info-catering {
+    height: auto;
+  }
+  .main-servicios .info-servicios {
+    height: auto;
+  }
+  .main-servicios .servicios-infantiles {
+    height: auto;
+  }
+  .main-servicios .info-final-servicios .flex-servicios .saber {
+    height: auto;
+  }
+  .main-servicios .info-final-servicios {
+    height: auto;
+  }
+  .main-servicios .info-final-servicios .flex-servicios .aparte {
+    height: auto;
+  }
+  .main-servicios {
+    height: auto;
+  }
+  .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil {
+    height: auto;
+  }
+  .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil p {
+    margin: 15px;
+    height: auto;
+  }
+  .main-servicios .boda {
+    height: auto;
+  }
+  .main-servicios .boda .evento1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-servicios .boda .evento1 p {
+    height: auto;
+    margin: 15px;
+  }
+  .main-servicios .boda .evento2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-servicios .boda .evento2 p {
+    height: auto;
+    margin: 15px;
+  }
+  .main-servicios .promo-infantil {
+    height: auto;
+  }
+  .main-servicios .candybar-servicios .flex-candy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-formulario {
+    height: auto;
+  }
 }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1130px) {
   .main-salon {
     height: 6600px;
   }
@@ -1451,24 +1540,71 @@ footer .redes a img {
   .main-salon .info-salon .info-salon-0 .info-salon-3 {
     height: 600px;
   }
-}
-@media screen and (max-width: 775px) {
-  header div {
-    flex-direction: column;
-    align-items: center;
-  }
-  header img {
-    width: 150px;
+  .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil {
     height: auto;
   }
-  header nav ul {
-    flex-direction: column;
-    /* Navegación vertical */
-    padding: 0;
+  .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil p {
+    margin: 15px;
+    height: auto;
   }
-  header nav ul li {
-    padding: 10px 0;
-    /* Espaciado vertical en los elementos de navegación */
+  .main-servicios .promo-infantil .promos .promo1 {
+    height: auto;
+  }
+  .main-servicios .promo-infantil .promos .promo2 {
+    height: auto;
+  }
+  .main-servicios .promo-infantil .promos .promo3 {
+    height: auto;
+  }
+  .main-servicios .promo-infantil .promos .promo1 p {
+    height: auto;
+    margin: 15px;
+  }
+  .main-servicios .promo-infantil .promos .promo2 p {
+    height: auto;
+    margin: 15px;
+  }
+  .main-servicios .promo-infantil .promos .promo3 p {
+    height: auto;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 930px) {
+  header nav .boton {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav .boton a {
+    font-size: 15px;
+    margin: 10px;
+  }
+  .main-catering .info-catering .info-catering1 {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 775px) {
+  header {
+    height: 250px;
+  }
+  header nav .boton {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header nav .boton a {
+    margin: 2px;
+    font-size: 10px;
+  }
+  header nav ul li a:hover,
+  a:active {
+    margin: 0px;
+    height: 1fr;
+    font-size: 8px;
+  }
+  header nav ul li a:link,
+  a:visited {
+    margin: 0px;
+    height: 1frw;
+    font-size: 8px;
   }
   .main-index .hero {
     height: 400px;
@@ -1567,10 +1703,47 @@ footer .redes a img {
     margin-top: 0px;
     font-size: 18px;
   }
+  .main-catering .info-catering .grid-catering {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-catering .candybar .grid-catering2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-catering .info-catering .info-catering1 {
+    height: auto;
+  }
+  .main-servicios .hero-servicios h1 {
+    font-size: 40px;
+    width: 95%;
+  }
+  .main-servicios .hero-servicios h2 {
+    font-size: 30px;
+  }
+  .main-servicios .promo-infantil .promos {
+    flex-direction: column;
+  }
+  .main-servicios .servicios-infantiles .tarjeta-infantil {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-servicios .boda {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-servicios .info-servicios {
+    display: none;
+  }
+  .main-servicios .hero-servicios div h1 {
+    font-size: 65px;
+  }
 }
 @media screen and (max-width: 500px) {
   header {
-    height: 170px;
+    height: 250px;
   }
   .main-index .galeria {
     margin-top: 0px;
@@ -1627,6 +1800,15 @@ footer .redes a img {
     justify-content: space-between;
     height: 1800px;
   }
+  .main-catering .opciones {
+    display: none;
+  }
+  .main-catering .hero-catering h1 {
+    font-size: 70px;
+  }
+  .main-servicios .hero-servicios div h1 {
+    font-size: 45px;
+  }
 }
 @media screen and (max-width: 360px) {
   .main-index {
@@ -1655,6 +1837,18 @@ footer .redes a img {
   }
   .main-salon .info-salon .info-salon-0 .info-salon-3 {
     height: 950px;
+  }
+  .main-catering .hero-catering h1 {
+    font-size: 50px;
+  }
+  .main-catering .hero-catering p {
+    font-size: 30px;
+  }
+  .main-catering .info-catering h2 {
+    font-size: 40px;
+  }
+  .main-catering .candybar h2 {
+    font-size: 40px;
   }
 }
 
