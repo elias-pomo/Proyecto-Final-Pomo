@@ -428,12 +428,11 @@ header nav .boton a:visited {
 }
 .main-salon .hero-salon p {
   background-color: rgba(0, 0, 0, 0.4745098039);
-  padding-right: 400px;
-  padding-left: 400px;
   font-size: 45px;
   margin-bottom: 30px;
   font-weight: 350;
-  color: white;
+  color: rgb(255, 255, 255);
+  width: 80%;
 }
 .main-salon .galeria-salon {
   display: flex;
@@ -1743,7 +1742,7 @@ footer .redes a img {
 }
 @media screen and (max-width: 500px) {
   header {
-    height: 250px;
+    height: 251px;
   }
   .main-index .galeria {
     margin-top: 0px;
