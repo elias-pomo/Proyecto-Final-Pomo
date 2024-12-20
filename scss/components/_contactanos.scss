@@ -3,11 +3,20 @@
     height: auto;
     background-image: url(../img/servicios/servicio5.jpg);
     background-size: cover;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
 
     .hero-formulario {
-        color: white;
+        width: 75%;
+        color: white;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
 
         .hero-1 {
+            margin: 50px;
             background-color: #000000b5;
             box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
             -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
