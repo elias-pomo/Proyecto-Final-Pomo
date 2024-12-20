@@ -1,11 +1,12 @@
 footer {
     background: #170141;
-    background: linear-gradient(359deg, #170141 10%, #867008 130%);
-    background: -webkit-linear-gradient(359deg, #170141 10%, #867008 130%);
-    background: -moz-linear-gradient(359deg, #170141 10%, #867008 130%);
+    background: linear-gradient(359deg, #45006d  10%, #000000 130%);
+    background: -webkit-linear-gradient(359deg, #45006d  10%, #000000 130%);
+    background: -moz-linear-gradient(359deg, #45006d  10%, #000000 130%);
     border-top: 5px solid rgb(255, 255, 255);
     opacity: 0.8;
-    height: 200px;
+    height: 150px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +19,7 @@ footer {
     }
 
     .botonend {
+        transition: 2s;
         &:link {
             color: white;
             border: 1px solid white;
@@ -28,7 +30,7 @@ footer {
             text-shadow: 1px 1px 1px black;
             text-align: center;
             text-decoration: none;
-            font-size: 30px;
+            font-size: 15px;
             font-weight: 500;
         }
 
@@ -88,8 +90,8 @@ footer {
                 justify-content: space-between;
                 border-radius: 20px;
                 margin: 20px;
-                height: 75px;
-                width: 75px;
+                height: 50px;
+                width: 50px;
                 box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
                 -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
                 -moz-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);

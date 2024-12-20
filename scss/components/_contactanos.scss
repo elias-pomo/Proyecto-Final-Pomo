@@ -1,6 +1,6 @@
 
 .main-formulario {
-    height: 1000px;
+    height: auto;
     background-image: url(../img/servicios/servicio5.jpg);
     background-size: cover;
 
@@ -16,24 +16,25 @@
 
             h1 {
                 font-weight: 250;
-                font-size: 60px;
+                font-size: 35px;
             }
 
             h2 {
                 font-weight: 250;
-                font-size: 50px;
+                font-size: 20px;
             }
 
             h3 {
                 font-weight: 250;
-                font-size: 40px;
+                font-size: 20px;
             }
         }
     }
 
     .container-formulario {
         color: white;
-        max-width: 900px;
+        max-width: 700px;
+        height: 550px;
         margin: 40px auto;
         padding: 20px;
         font-weight: 250;
@@ -50,12 +51,12 @@
             label {
                 color: white;
                 font-weight: 350;
-                font-size: 25px;
+                font-size: 15px;
                 margin-bottom: 5px;
             }
 
             input {
-                font-size: 16px;
+                font-size: 12px;
                 padding: 10px;
                 margin-bottom: 15px;
                 border: 1px solid #ccc;
@@ -63,7 +64,7 @@
             }
 
             textarea {
-                font-size: 16px;
+                font-size: 12px;
                 padding: 10px;
                 margin-bottom: 15px;
                 border: 1px solid #ccc;
@@ -73,7 +74,7 @@
 
             button {
                 padding: 12px;
-                font-size: 18px;
+                font-size: 12px;
                 color: white;
                 background-color: #333;
                 border: none;

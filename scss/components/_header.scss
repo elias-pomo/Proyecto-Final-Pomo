@@ -5,11 +5,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
     background: #170141;
-    background: linear-gradient(359deg, #170141 10%, #867008 130%);
-    background: -webkit-linear-gradient(359deg, #170141 10%, #867008 130%);
-    background: -moz-linear-gradient(359deg, #170141 10%, #867008 130%);
+    background: linear-gradient(359deg, #45006d  10%, #000000 130%);
+    background: -webkit-linear-gradient(359deg, #45006d  10%, #000000 130%);
+    background: -moz-linear-gradient(359deg, #45006d  10%, #000000 130%);
     color: white;
     height: 130px;
+    border-bottom: 1px solid white;
     img {
         width: 150px;
         height: 150px;
@@ -28,14 +29,11 @@ header{
 
             a{
                 border: 1px solid white;
-                box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
-                -webkit-box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
-                -moz-box-shadow: 0px 4px 20px -5px rgb(255, 255, 255);
                 padding: 13px;
                 color: rgb(255, 255, 255);
                 font-family: "Newsreader", serif;
-                font-size: 22px;
-                font-weight: 400;
+                font-size: 15px;
+                font-weight: 350;
                 text-decoration: none;
                 margin: 50px 20px 10px 20px;
                 height: 50px;

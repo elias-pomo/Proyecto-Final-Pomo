@@ -1,326 +1,89 @@
-@media screen and (max-width: 1596px) {
-
-    header nav ul li a:hover,
-    a:active {
-        height: 50px;
-        font-size: 15px;
-    }
-
-    header nav ul li a:link,
-    a:visited {
-        height: 50px;
-        font-size: 15px;
-    }
-
-
-    .main-index .galeria {
-        height: auto;
-    }
-
-
-    .main-index .galeria .tarjetas {
-        grid-template-columns: repeat(2, 1fr);
-        /* Dos columnas en pantallas medianas */
-    }
-
-    .main-index .comida .comida1 {
-        flex-direction: row;
-        /* Mantiene la dirección en fila */
-        justify-content: space-between;
-        /* Espaciado entre elementos */
-        gap: 25px;
-    }
-
-    .main-index .comida .comida1 div {
-        width: 45%;
-    }
-
-    .main-salon .galeria-salon {
-        height: 1500px;
-    }
-
-    .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra p {
-        font-size: 20px;
-    }
-
-    .main-salon img {
-        width: 90%;
-    }
-
-    .main-catering .candybar {
-        height: auto;
-    }
-
-    .main-catering .candybar .info-candybar img {
-        display: none;
-    }
-
-    .main-catering .info-catering .grid-catering .item-catering1 img {
-        width: 80%;
-    }
-
-    .main-catering .candybar .grid-catering2 .item-catering2 img {
-        width: 80%;
-    }
-
-    .main-catering .info-catering .info-catering1 .img-catering {
-        display: none;
-    }
-
-    .main-catering .info-catering .info-catering1 {
-        height: 500px;
-
-    }
-
-    .main-catering .info-catering {
-        height: auto;
-
-    }
-
-    .main-servicios .info-servicios {
-        height: auto;
-    }
-
-    .main-servicios .servicios-infantiles {
-        height: auto;
-    }
-
-    .main-servicios .info-final-servicios .flex-servicios .saber {
-        height: auto;
-    }
-
-    .main-servicios .info-final-servicios {
-        height: auto;
-    }
-
-    .main-servicios .info-final-servicios .flex-servicios .aparte {
-        height: auto;
-    }
-
-    .main-servicios {
-        height: auto;
-    }
-    .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil {
-        height: auto;
-    }
-
-    .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil p {
-        margin: 15px;
-        height: auto;
-    }
-    .main-servicios .boda{
-        height: auto;
-    }
-    .main-servicios .boda .evento1 {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .main-servicios .boda .evento1 p{
-        height: auto;
-        margin: 15px;
-    }
-    .main-servicios .boda .evento2 {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .main-servicios .boda .evento2 p{
-        height: auto;
-        margin: 15px;
-    }
-    .main-servicios .promo-infantil{
-        height: auto;
-    }
-    .main-servicios .candybar-servicios .flex-candy{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } 
-    .main-formulario{
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 1130px) {
-
-    .main-salon {
-        height: 6600px;
-    }
-
-    header {
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: start;
-        height: 150px;
-    }
-
-    header nav ul li a:hover,
-    a:active {
-        height: 50px;
-        font-size: 15px;
-    }
-
-    header nav ul li a:link,
-    a:visited {
-        height: 50px;
-        font-size: 15px;
-    }
-
-    header img {
-        display: none;
-    }
-
-    footer .botonend:hover,
-    .botonend:active {
-        font-size: 15px;
-    }
-
-    footer .botonend:link,
-    .botonend:visited {
-        font-size: 15px;
-    }
-
-
-    .main-index .comida {
-        height: 1000px;
-    }
-
-    .main-index .comida .comida1 .texto2 {
-        display: none;
-    }
-
-    .main-index .opinioness {
-        height: 1200px;
-        align-items: center;
-    }
-
-    .main-index .opinioness .opiniones {
-        background-size: cover;
-        height: 1200px;
-        width: 80%;
-    
-    }
-    .main-index .opinioness .opiniones .opiniones-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-
-    .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra p {
-        font-size: 17px;
-    }
-
-    .main-salon .hero-salon {
-        height: 200px;
-    }
-
-    .main-salon .hero-salon p {
-        display: none;
-    }
-
-    .main-salon .hero-salon h1 {
-        font-size: 45px;
-    }
-
-
-    .main-salon .galeria-salon2 .carta-salon div p {
-        height: 700px;
-        width: 400px;
-    }
-
-    .main-salon .galeria-salon2 .carta-salon p {
-        font-size: 23px;
-    }
-
-    .main-salon .info-salon {
-        height: 2000px;
-        background-size: cover;
-    }
-
-    .main-salon .galeria-salon {
-        height: 2200px;
-    }
-
-    .main-salon .info-salon .info-salon-0 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-salon .info-salon .info-salon-0 .info-salon-1 {
-        height: 600px;
-        font-size: 15px;
-    }
-
-    .main-salon .info-salon .info-salon-0 .info-salon-2 {
-        height: 600px;
-    }
-
-    .main-salon .info-salon .info-salon-0 .info-salon-3 {
-        height: 600px;
-    }
-
-    .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil {
-        height: auto;
-    }
-
-    .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil p {
-        margin: 15px;
-        height: auto;
-    }
-    .main-servicios .promo-infantil .promos .promo1 {
-        height: auto;
-    }
-    .main-servicios .promo-infantil .promos .promo2 {
-        height: auto;
-    }
-    .main-servicios .promo-infantil .promos .promo3 {
-        height: auto;
-    }
-    .main-servicios .promo-infantil .promos .promo1 p{
-        height: auto;
-        margin: 15px;
-    }
-    .main-servicios .promo-infantil .promos .promo2 p{
-        height: auto;
-        margin: 15px;
-    }
-    .main-servicios .promo-infantil .promos .promo3 p{
-        height: auto;
-        margin: 15px;
-    }
-    
-}
-
-@media screen and (max-width: 930px) {
-    header nav .boton{
+@media screen and (max-width: 1024px) {
+    header nav .boton {
         display: flex;
         flex-direction: row;
     }
-    header nav .boton a{
+
+    header nav .boton a {
         font-size: 15px;
         margin: 10px;
     }
+
     .main-catering .info-catering .info-catering1 {
         height: 600px;
+    }
+
+    .main-salon .galeria-salon {
+        height: auto;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra p {
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra .tarjetas-muestra2 {
+        height: 50%;
+        width: 50%;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra .tarjetas-muestra2 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-catering .info-catering .info-catering1 .img-catering img {
+        height: 50%;
+        width: 50%;
+    }
+
+    .main-catering .candybar .info-candybar div img {
+        height: 49%;
+        width: 49%;
+    }
+
+    .main-catering .info-catering .grid-catering .item-catering1 p {
+        font-size: 13px;
+
+    }
+    .main-catering .info-catering .grid-catering .item-catering1 img{
+        height: 70%;
+        width: 80%;
+
+    }
+    .main-catering .info-catering .grid-catering2 .item-catering2 p {
+        font-size: 13px;
+
+    }
+    .main-catering .candybar .grid-catering2 .item-catering2 img{
+        height: 70%;
+        width: 80%;
+    }
+    .main-catering .opciones .card img{
+        height: 100%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 775px) {
-    header{
+    header {
         height: 250px;
-        
-    }
-    header nav .boton{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);  
 
     }
-    header nav .boton a{
+
+    header nav .boton {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    header nav .boton a {
         margin: 2px;
         font-size: 10px;
     }
@@ -340,23 +103,25 @@
     }
 
     .main-index .hero {
-        height: 400px;
+        height: auto;
         /* Reduce la altura de la sección hero */
     }
 
     .main-index .hero h1 {
-        font-size: 40px;
+        font-size: 30px;
         /* Reduce el tamaño del texto */
     }
 
-    .main-index .hero h2,
-    .hero p {
-        font-size: 30px;
-        /* Ajusta tamaño de h2 y p */
+    .main-index .hero h2 {
+        font-size: 15px;
+    }
+
+    .main-index .hero p {
+        font-size: 15px;
     }
 
     .main-index .galeria {
-        height: 1850px;
+        height: auto;
         /* Permite que la galería ajuste su altura */
         padding: 20px;
         /* Añade espacio alrededor */
@@ -374,7 +139,7 @@
     }
 
     .main-index .info {
-        height: 1800px;
+        height: auto;
     }
 
     .main-index .info .tarjetas2 {
@@ -383,22 +148,36 @@
         align-items: center;
     }
 
+    .main-index .info h2 {
+        font-size: 20px;
+    }
+
+    .main-index .info .tarjetas2 div {
+        width: 60%;
+    }
+
     .main-index .comida {
-        height: 1800px;
+        height: auto;
+    }
+
+    .main-index .comida h2 {
+        font-size: 20px;
     }
 
     .main-index .comida .comida1 {
         flex-direction: column;
-        /* Cambia a columna para la sección de comida */
+        justify-content: space-evenly;
+        align-items: center;
         margin: 0;
-        /* Elimina márgenes */
+
     }
 
     .main-index .comida .comida1 div {
-        width: 100%;
-        /* Ocupa el 100% del ancho en móviles */
-        margin-bottom: 20px;
-        /* Espaciado entre secciones */
+        width: 60%;
+        align-items: center;
+
+        height: 40%;
+
     }
 
     .main-index .comida .comida1 .texto2 {
@@ -410,18 +189,22 @@
 
     .main-index .opinioness {
         flex-direction: column;
-        height: 1600px;
+        height: auto;
 
     }
 
     .main-index .opinioness .opiniones {
-        height: 1400px;
+        height: auto;
     }
 
     .main-index .opinioness .opiniones .opiniones-container {
         flex-direction: column;
         /* Cambia a columna para contenedor de opiniones */
         align-items: center;
+    }
+
+    .main-index .opinioness .opiniones .opiniones-container .opinion p {
+        font-size: 12px;
     }
 
     footer {
@@ -443,30 +226,129 @@
         height: 50px;
     }
 
+    .main-salon {
+        height: auto;
+    }
+
+    .main-salon .hero-salon {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .main-salon .hero-salon div {
+
+        width: 70%;
+    }
+
+    .main-salon .hero-salon p {
+        font-size: 15px;
+    }
+
+    .main-salon .hero-salon div h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+
     .main-salon .galeria-salon {
-        height: 2000px;
+        height: auto;
     }
 
     .main-salon .galeria-salon h2 {
         font-size: 30px;
     }
 
+    .main-salon .galeria-salon2 h2 {
+        font-size: 20px;
+    }
+
+    .main-salon .galeria-salon2 .carta-salon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-salon .galeria-salon2 .carta-salon div img {
+        display: none;
+    }
+
+    .main-salon .galeria-salon2 .carta-salon div p {
+        font-size: 16px;
+    }
+
+    .main-salon .muestra-salon {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra p {
+
+        width: 60%;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra .tarjetas-muestra2 {
+        margin: 60px;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
     .main-salon .info-salon {
-        height: 1000px;
-        background-size: cover;
+        height: auto;
+    }
+
+    .main-salon .info-salon .info-salon-0 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .main-salon .info-salon .info-salon-0 p {
-        margin-top: 0px;
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .main-catering .hero-catering{
+        height: 300px;
+    }
+    .main-catering .hero-catering h1{
+        font-size: 30px;
+        width: 40%;
+    }
+    .main-catering .hero-catering p{
+        font-size: 15px;
+    
     }
 
+    .main-catering .info-catering .info-catering1 .img-catering{
+        display: none;
+    }
+    .main-catering .info-catering h2{
+        font-size: 25px;
+    }
+    .main-catering .candybar h2{
+        font-size: 25px;
+    }
     .main-catering .info-catering .grid-catering {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
+    .main-catering .candybar .info-candybar div{
+        display: none;
+    }
     .main-catering .candybar .grid-catering2 {
         display: flex;
         flex-direction: column;
@@ -476,30 +358,37 @@
     .main-catering .info-catering .info-catering1 {
         height: auto;
     }
+
     .main-servicios .hero-servicios h1 {
         font-size: 40px;
         width: 95%;
-        
+
     }
+
     .main-servicios .hero-servicios h2 {
         font-size: 30px;
-        
+
     }
+
     .main-servicios .promo-infantil .promos {
         flex-direction: column;
     }
-    .main-servicios .servicios-infantiles .tarjeta-infantil{
+
+    .main-servicios .servicios-infantiles .tarjeta-infantil {
         display: flex;
         flex-direction: column;
     }
-    .main-servicios .boda{
+
+    .main-servicios .boda {
         display: flex;
         flex-direction: column;
     }
-    .main-servicios .info-servicios{
+
+    .main-servicios .info-servicios {
         display: none;
     }
-    .main-servicios .hero-servicios div h1{
+
+    .main-servicios .hero-servicios div h1 {
         font-size: 65px;
     }
 }
@@ -512,73 +401,84 @@
 
     .main-index .galeria {
         margin-top: 0px;
-        height: 2000px;
+        height: auto;
+    }
+
+    .main-index .comida {
+        height: auto;
     }
 
     .main-salon .hero-salon {
-        height: 250px;
+        height: 300px;
     }
 
     .main-salon .hero-salon h1 {
-        font-size: 45px;
+        font-size: 25px;
+    }
+
+    .main-salon .hero-salon p {
+        font-size: 10px;
     }
 
     .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra .tarjetas-muestra2 {
         display: none;
     }
 
-    .main-salon .muestra-salon .grid-muestra-salon1 .grid-muestra-salon2 .seccion-muestra p {
-        font-size: 13px;
-    }
-
     .main-salon .galeria-salon2 {
-        height: 1200px;
+        height: auto;
     }
 
     .main-salon .galeria-salon2 .carta-salon img {
         display: none;
     }
 
+    .main-salon .galeria-salon2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .main-salon .galeria-salon2 .carta-salon div {
+        align-items: center;
+
+    }
+
     .main-salon .galeria-salon2 .carta-salon div p {
-        font-size: 20px;
-        width: 320px;
+        font-size: 15px;
     }
 
     .main-salon {
-        height: 6900px;
+        height: auto;
+    }
+
+    .main-salon .muestra-salon .seccion-muestra p {
+        font-size: 10px;
+        font-weight: 450;
     }
 
     .main-salon .info-salon {
         background-size: cover;
-        height: 1700px;
+        height: auto;
     }
 
     .main-salon .info-salon .info-salon-0 {
-        margin: 0px;
+        margin: 20px;
         display: flex;
         flex-direction: column;
         align-items: top;
     }
 
     .main-salon .info-salon .info-salon-0 .info-salon-1 {
-        height: 850px;
+        margin: 20px;
     }
 
-    .main-salon .info-salon .info-salon-0 .info-salon-2 {
-        height: 850px;
+    .main-salon .info-salon .info-salon-0 .info-salon-1 h3 {
+        font-size: 15px;
     }
 
-    .main-salon .info-salon .info-salon-0 .info-salon-3 {
-        height: 850px;
-    }
-
-    .main-salon .opinioness {
-        height: 2000px;
-    }
-
-    .main-salon .opinioness .opiniones {
-        justify-content: space-between;
-        height: 1800px;
+    .main-salon .info-salon .info-salon-0 .info-salon-1 p {
+        font-size: 15px;
     }
 
     .main-catering .opciones {
@@ -586,17 +486,33 @@
     }
 
     .main-catering .hero-catering h1 {
-        font-size: 70px;
+        font-size: 20px;
     }
-    .main-servicios .hero-servicios div h1{
+    .main-catering .info-catering h2{
+        font-size: 15px;
+    }
+    .main-catering .candybar h2{
+        font-size: 15px;
+    }
+
+    .main-servicios .hero-servicios div h1 {
         font-size: 45px;
     }
 }
 
+@media screen and (max-width: 410px) {
+    .main-index .comida .comida1 div {
+        width: 60%;
+    }
+}
 
 @media screen and (max-width: 360px) {
     .main-index {
-        height: 6000px;
+        height: auto;
+    }
+
+    .main-index .hero p {
+        font-size: 10px;
     }
 
     .main-salon .opinioness {
@@ -607,36 +523,34 @@
 
     .main-salon .info-salon {
         background-size: cover;
-        display: flex;
-        flex-direction: column;
-        height: 3000px;
+        height: auto;
     }
 
     .main-salon .info-salon .info-salon-0 {
-        margin: 0px;
+        margin: 20px;
         display: flex;
         flex-direction: column;
+        align-items: top;
     }
 
     .main-salon .info-salon .info-salon-0 .info-salon-1 {
-
-        height: 950px;
+        margin: 20px;
     }
 
-    .main-salon .info-salon .info-salon-0 .info-salon-2 {
-        height: 950px;
+    .main-salon .info-salon .info-salon-0 .info-salon-1 h3 {
+        font-size: 12px;
     }
 
-    .main-salon .info-salon .info-salon-0 .info-salon-3 {
-        height: 950px;
+    .main-salon .info-salon .info-salon-0 .info-salon-1 p {
+        font-size: 10px;
     }
 
     .main-catering .hero-catering h1 {
-        font-size: 50px;
+        font-size: 15px;
     }
 
     .main-catering .hero-catering p {
-        font-size: 30px;
+        font-size: 10px;
     }
 
     .main-catering .info-catering h2 {
@@ -645,5 +559,13 @@
 
     .main-catering .candybar h2 {
         font-size: 40px;
+    }
+    .main-catering .info-catering h2{
+        font-size: 20px;
+        width: 70%;
+    }
+    .main-catering .candybar h2{
+        font-size: 20px;
+        width: 70%;
     }
 }

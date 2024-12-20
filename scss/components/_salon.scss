@@ -7,7 +7,7 @@
     .hero-salon {
         background-image: url(../img/salon/herosalon2.jpg);
         background-attachment: fixed;
-        height: 1100px;
+        height: 500px;
         background-repeat: no-repeat;
         background-position: center;
         display: flex;
@@ -19,25 +19,40 @@
             margin-top: 75px;
             border: 6px double white;
             background-color: #1b043552;
-            width: 70%;
+            width: 50%;
+            transition: 1s;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                border: 2px double black;
+                transform: scale(1.3);
+                border-radius: 15px;
+            }
 
             h1 {
-                font-size: 150px;
+                font-size: 60px;
                 font-weight: 250;
                 color: white;
                 text-shadow: -3px 1px 0px rgba(158, 17, 233, 0.6);
+                transition: 1s;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                border-radius: 15px;
+            }
 
             }
         }
 
         p {
             background-color: #00000079;
-            font-size: 45px;
+            font-size: 20px;
             margin-bottom: 30px;
             font-weight: 350;
             color: rgb(255, 255, 255);
-            width: 8
-            0%;
+            width: 100%;
         }
     }
 
@@ -46,37 +61,38 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        justify-content: space-around;
-        height: 1250px;
-        background: #ff0000;
-        background: radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #000000 80%);
-        background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #000000 80%);
-        background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #000000 80%);
+        height: auto;
+        background: radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
+        background: -webkit-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
+        background: -moz-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
 
         h2 {
             color: white;
             background-color: #00000052;
-            font-size: 75px;
+            font-size: 35px;
             padding: 5px;
             font-weight: 200;
-            border-top: 5px solid white;
-            border-bottom: 5px solid white;
-            width: 70%;
+            border-top: 3px double white;
+            border-bottom: 3px double white;
+            width: 60%;
+            margin: 40px;
         }
 
         p {
             color: rgb(0, 0, 0);
-            font-size: 55px;
+            font-size: 20px;
             font-weight: 250;
             background-color: rgba(255, 255, 255, 0.836);
             border: 1px solid rgb(0, 0, 0);
+            margin: 50px;
         }
     }
 
     .carousel-inner-salon {
+        margin: 50px;
         img {
             margin-top: -50px;
-            height: 800px;
+            height: 400px;
             width: 100%;
             border-radius: 25px;
             border: 1px solid white;
@@ -90,21 +106,29 @@
         background-image: url(../img/salon/salon6.jpg);
         background-size: cover;
         background-attachment: fixed;
-        height: 1000px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
         h2 {
             color: white;
-            font-size: 50px;
+            font-size: 30px;
             padding: 5px;
-            margin-bottom: 30px;
+            margin: 50px;
+            border: 3px double white;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.521);
         }
 
         .carta-salon {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
-            margin-top: 30px;
+            margin: 50px;
+            width: 100%;
 
             div {
                 img {
@@ -112,13 +136,16 @@
                     -webkit-box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
                     -moz-box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
                     border-radius: 25px;
+                    height: 500px;
                 }
 
                 p {
-                    width: 500px;
-                    height: 800px;
+                    text-align: justify;
+                    padding: 10px;
+                    width: 350px;
+                    height: 500px;
                     color: white;
-                    font-size: 28px;
+                    font-size: 110%;
                     font-variant: small-caps;
                     font-weight: 450;
                     background-color: #0000007e;
@@ -127,65 +154,88 @@
                     box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
                     -webkit-box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
                     -moz-box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
+                    transition: 3s;
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.692);
+                        color: black;
+                        transform: scale(1.1);
+                        border-radius: 45px;
+                    }
                 }
             }
         }
     }
 
     .muestra-salon {
-        height: 1300px;
-        background: #ff0000;
-        background: radial-gradient(ellipse farthest-side at center center, #ff0000 -90%, #000000 80%);
-        background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 -90%, #000000 80%);
-        background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 -90%, #000000 80%);
-
-        .grid-muestra-salon1 {
-            .grid-muestra-salon2 {
+        height: auto;
+        background: radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
+        background: -webkit-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
+        background: -moz-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
+        align-items: center;
+        
+        
                 .seccion-muestra {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
-                    margin: 20px;
+                    justify-content: space-evenly;
+                    
 
-                    .tarjetas-muestra2 {
+                    .tarjetas-muestra2 
+                    {
+                    margin-top: 50px;
+                    margin-left: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
                         img {
                             border: 3px solid white;
                             border-radius: 25px;
+                            height: 75%;
+                            transition: 2s;
+                            &:hover{
+                                border-radius: 50px;
+                                transform: scale(1.2);
+                            }
                         }
                     }
 
                     p {
+                        margin-top: 50px;
+                        margin-right: 50px;
                         color: white;
-                        text-align: center;
-                        font-size: 26px;
+                        text-align:justify;
+                        font-size: 14px;
                         font-weight: 250;
-                        width: 950px;
-                        height: 380px;
-                        padding: 20px;
+                        width: auto;
+                        height: 300px;
+                        padding: 10px;
                         background-color: #0000007e;
                         border: 2px solid white;
+                        transition: 2s;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                            border: 2px solid gold;
+                        }
                     }
                 }
-            }
-        }
+            
     }
 
     .info-salon {
         background-image: url(../img/salon/salon11.jpg);
-        height: 900px;
+        height: auto;
         color: white;
         display: flex;
 
         .info-salon-0 {
-            height: 800px;
+            height: 600px;
             display: flex;
             text-align: center;
             align-self: center;
             justify-content: space-between;
             flex-direction: column;
-            margin: 20px;
-            margin-left: 100px;
-            margin-right: 100px;
+            margin: 50px;
 
             .info-salon-1 {
                 background-color: #000000b2;
@@ -197,13 +247,13 @@
 
                 h2 {
                     color: white;
-                    font-size: 60px;
+                    font-size: 30px;
                     font-weight: 250;
                 }
 
                 p {
                     color: white;
-                    font-size: 25px;
+                    font-size: 15px;
                     font-weight: 300;
                 }
             }
