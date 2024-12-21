@@ -221,11 +221,11 @@
                 opacity: 90%;
                 @include funcionalidades.flex(flex, column, space-between, center);
                 border: 10px double rgb(0, 0, 0);
-                background-color: rgba(255, 255, 255, 0.938);
+                background-color: rgba(0, 0, 0, 0.562);
                 box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
                 -webkit-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
                 -moz-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
-                height: 400px;
+                height: 420px;
                 width: auto;
                 border-radius: 15px;
                 margin: 0px 100px;
@@ -243,12 +243,12 @@
     
                 img {
                     width: 100%;
-                    height: 220px;
+                    height: 250px;
     
                 }
     
                 p {
-                    color: list.nth(funcionalidades.$colores, 5);
+                    color: list.nth(funcionalidades.$colores, 3);
                     @include funcionalidades.font(100%, 300);
                 }
     
@@ -258,7 +258,7 @@
                     padding: 10px;
                     margin: 10px;
                     text-align: center;
-                    color: list.nth(funcionalidades.$colores, 5);
+                    color: list.nth(funcionalidades.$colores, 3);
                     border-radius: 5px;
                     border: 2px, solid, rgb(0, 0, 0);
                     box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
