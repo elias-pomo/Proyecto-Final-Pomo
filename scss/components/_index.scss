@@ -1,51 +1,32 @@
+@use '../base/funcionalidades';
+@use '../base/generales';
+@use 'sass:list';
+
 .main-index {
     .hero {
-        border-top: 5px solid gold;
         text-align: center;
         height: 500px;
         background-image: url(../img/fondo-hero1.jpg);
         background-size: cover;
         background-attachment: local;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
+        @include funcionalidades.flex(flex, column, space-between, center);
         h1 {
-            color: white;
-            font-size: 60px;
-            font-weight: 150;
-            border: 2px solid white;
-            width: 50%;
-            padding: 15px;
-            margin: 70px;
-            background-color: #00000071;
-            transition: 1s;
-
-            &:hover {
-                background-color: white;
-                color: black;
-                border: 2px double black;
-                transform: scale(1.3);
-                border-radius: 15px;
-            }
+        @extend %h1;
         }
 
         div {
             
-            background-color: #00000071;
+            background-color: list.nth(funcionalidades.$colores, 1);
             width: 100%;
             h2 {
-                color: white;
-                font-size: 35px;
-                font-weight: 250;
+                color: list.nth(funcionalidades.$colores, 3);
+                @include funcionalidades.font(30px, 250);
                 text-shadow: 1px 2px 16px rgb(0, 0, 0);
             }
 
             p {
-                color: white;
-                font-weight: 300;
-                font-size: 30px;
+                color: list.nth(funcionalidades.$colores, 3);
+                @include funcionalidades.font(25px, 300);
                 text-shadow: 2px 3px 16px #170141;
             }
         }
@@ -63,30 +44,26 @@
         margin: 20px;
         height: auto;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include funcionalidades.flex(flex, column, space-between, center);
+        
 
         .texto1 {
             height: auto;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
+            @include funcionalidades.flex(flex, column, space-between, center);
+    
 
             h2 {
-                color: white;
+                color: list.nth(funcionalidades.$colores, 3);
                 margin: 50px;
                 font-family: "Newsreader", serif;
                 font-style: italic;
-                font-weight: 250;
-                font-size: 30px;
+                @include funcionalidades.font(30px, 250);
             }
 
             div {
                 p {
-                    color: white;
-                    font-weight: 300;
-                    font-size: 20px;
+                    color: list.nth(funcionalidades.$colores, 3);
+                    @include funcionalidades.font(20px, 300);
 
                 }
             }
@@ -94,9 +71,8 @@
 
         .tarjetas {
             margin: 70px 0px 0px 0px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            @include funcionalidades.flex(flex, row, space-between, center);
+        
 
             .grid-item {
                 img {
@@ -114,8 +90,8 @@
 
                 h3 {
                     position: absolute;
-                    color: white;
-                    background-color: #00000088;
+                    color: list.nth(funcionalidades.$colores, 3);
+                    background-color: list.nth(funcionalidades.$colores, 1);
                     top: 560px;
                 }
             }
@@ -132,9 +108,7 @@
         width: 100%;
         border-radius: 15px;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include funcionalidades.flex(flex, column, 0, center);
         box-shadow: 3px 3px 50px -8px rgba(255, 255, 255, 1);
         -webkit-box-shadow: 3px 3px 50px -8px rgba(255, 255, 255, 1);
         -moz-box-shadow: 3px 3px 50px -8px rgba(255, 255, 255, 1);
@@ -143,8 +117,8 @@
         h2 {
             margin: 50px;
             padding: 15px;
-            color: white;
-            font-size: 35px;
+            color: list.nth(funcionalidades.$colores, 3);
+            font-size: list.nth(funcionalidades.$font-size, 6);
             font-weight: 200;
             text-shadow: 2px 2px 2px #e4d9ff;
             border: 3px double white;
@@ -155,17 +129,17 @@
             &:hover {
                 transform: scale(1.2);
                 background-color: white;
-                color: black;
+                color: list.nth(funcionalidades.$colores, 5);
                 border: 5px double black;
             }
         }
 
         .tarjetas2 {
-            display: flex;
-            justify-content: space-around;
+            @include funcionalidades.flex(flex, 0, space-around, center);
+        
 
             div {
-                background-color: #000000c0;
+                background-color: list.nth(funcionalidades.$colores, 1);
                 opacity: 80%;
                 margin: 20px;
                 border: thick double white;
@@ -175,10 +149,8 @@
                 height: 300px;
                 width: 20%;
                 text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-direction: column;
+                @include funcionalidades.flex(flex, column, space-between, center);
+        
                 transition: all 2s;
 
                 &:hover {
@@ -192,199 +164,183 @@
             }
 
             h3 {
-                font-size: 25px;
+                @include funcionalidades.font(25px, 250);
                 padding: 20px;
-                color: white;
-                font-weight: 250;
+                color: list.nth(funcionalidades.$colores, 3);
                 text-shadow: 1px 1px 1px #e4d9ff;
             }
 
             p {
-                font-size: 15px;
-                font-weight: 400;
-                color: white;
+                @include funcionalidades.font(12px, 400);
+                color: list.nth(funcionalidades.$colores, 3);
                 text-shadow: none;
                 padding: 0px 10px 0px 10px;
-                font-weight: 250;
             }
         }
     }
-}
-
-.comida {
-    background: radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
-    background: -webkit-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
-    background: -moz-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
-    height: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-
-    h2 {
-        color: rgb(0, 0, 0);
-        border: 10px double rgb(0, 0, 0);
-        background-color: #ffffffcc;
-        font-size: 35px;
-        font-weight: 250;
-        width: 40%;
-        margin: 50px;
-        padding: 20px;
-        transition: 1s;
-
-        &:hover {
-            border-radius: 50px;
-            transform: scale(1.2);
-        }
-    }
-
-    h3 {
-        color: white;
-        text-shadow: 1px 1px 1px gold;
-        font-size: 25px;
-        font-weight: 250;
-    }
-
-    .comida1 {
+    .comida {
+        background: radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
+        background: -webkit-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
+        background: -moz-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
         height: auto;
-        display: flex;
-        justify-content: space-between;
-        margin: 80px;
-
-        div {
-            text-align: justify;
-            opacity: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+        text-align: center;
+        @include funcionalidades.flex(flex, column, space-between, center);
+        
+    
+    
+        h2 {
+            color: list.nth(funcionalidades.$colores, 5);
             border: 10px double rgb(0, 0, 0);
-            background-color: rgba(255, 255, 255, 0.938);
-            box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
-            -webkit-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
-            -moz-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
-            height: 400px;
-            width: auto;
-            border-radius: 15px;
-            margin: 0px 100px;
+            background-color: #ffffffcc;
+            @include funcionalidades.font(35px, 250);
+            width: 40%;
+            margin: 50px;
+            padding: 20px;
             transition: 1s;
-
+    
             &:hover {
                 border-radius: 50px;
                 transform: scale(1.2);
-
-                img {
-                    transition: 1s;
-                    border-radius: 40px;
-                }
-            }
-
-            img {
-                width: 100%;
-                height: 220px;
-
-            }
-
-            p {
-                color: rgb(0, 0, 0);
-                font-size: 100%;
-                font-weight: 300;
-            }
-
-            a {
-                text-decoration: none;
-                font-size: 25px;
-                padding: 10px;
-                margin: 10px;
-                font-weight: 300;
-                text-align: center;
-                color: rgb(0, 0, 0);
-                border-radius: 5px;
-                border: 2px, solid, rgb(0, 0, 0);
-                box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
-                -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
-                -moz-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
-                padding: 4px;
-                transition: 2s;
-
-                &:hover {
-                    background-color: rgba(255, 217, 0, 0.664);
-                    color: #000000;
-                    border-radius: 35px;
-                    width: 70%;
-                }
             }
         }
-    }
-
-}
-
-
-.opinioness {
-    background-image: url(../img/fondo-desenfoque2.jpg);
-    background-size: cover;
-    border-top: 5px solid white;
-    object-fit: cover;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .opiniones {
-        margin: 50px;
-        text-align: center;
-        padding: 50px 20px;
-        background: #000000;
-        background: linear-gradient(90deg, #000000 0%, #2f306a 80%);
-        background: -webkit-linear-gradient(90deg, #000000 0%, #2f306a 80%);
-        background: -moz-linear-gradient(90deg, #000000 0%, #2f306a 80%);
-        border: 6px groove #ffffff;
-        border-radius: 25px;
-        opacity: 90%;
-        height: 400px;
-
-        h2 {
-            font-size: 35px;
-            font-weight: 200;
-            margin-top: -35px;
-            margin-bottom: 60px;
-            color: white;
+    
+        h3 {
+            color: list.nth(funcionalidades.$colores, 3);
+            text-shadow: 1px 1px 1px gold;
+            @include funcionalidades.font(25px, 250);
         }
-
-        .opiniones-container {
+    
+        .comida1 {
+            height: auto;
             display: flex;
             justify-content: space-between;
-            gap: 15px;
-
-            .opinion {
-                background-color: rgb(0, 0, 0);
-                border-radius: 10px;
-                border: 3px groove #ffffff;
-                padding: 20px;
-                max-width: 450px;
-                text-align: left;
-                height: 200px;
-
-                h3 {
-                    font-size: 25px;
-                    margin-bottom: 10px;
-                    color: #c2b4b4;
+            margin: 80px;
+    
+            div {
+                text-align: justify;
+                opacity: 90%;
+                @include funcionalidades.flex(flex, column, space-between, center);
+                border: 10px double rgb(0, 0, 0);
+                background-color: rgba(255, 255, 255, 0.938);
+                box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+                -webkit-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+                -moz-box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
+                height: 400px;
+                width: auto;
+                border-radius: 15px;
+                margin: 0px 100px;
+                transition: 1s;
+    
+                &:hover {
+                    border-radius: 50px;
+                    transform: scale(1.2);
+    
+                    img {
+                        transition: 1s;
+                        border-radius: 40px;
+                    }
                 }
-
-                .rating {
-                    color: #ffbc00;
-                    font-size: 1.1em;
+    
+                img {
+                    width: 100%;
+                    height: 220px;
+    
                 }
-
+    
                 p {
-                    font-size: 15px;
-                    font-weight: 300;
-                    line-height: 1.5;
-                    color: white;
+                    color: list.nth(funcionalidades.$colores, 5);
+                    @include funcionalidades.font(100%, 300);
+                }
+    
+                a {
+                    text-decoration: none;
+                    @include funcionalidades.font(25px, 300);
+                    padding: 10px;
+                    margin: 10px;
+                    text-align: center;
+                    color: list.nth(funcionalidades.$colores, 5);
+                    border-radius: 5px;
+                    border: 2px, solid, rgb(0, 0, 0);
+                    box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                    -webkit-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                    -moz-box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
+                    padding: 4px;
+                    transition: 2s;
+    
+                    &:hover {
+                        background-color: rgba(255, 217, 0, 0.664);
+                        color: list.nth(funcionalidades.$colores, 5);
+                        border-radius: 35px;
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    
+    .opinioness {
+        background-image: url(../img/fondo-desenfoque2.jpg);
+        background-size: cover;
+        border-top: 5px solid white;
+        object-fit: cover;
+        height: auto;
+        @include funcionalidades.flex(flex, 0, space-between, center);
+    
+        .opiniones {
+            margin: 50px;
+            text-align: center;
+            padding: 50px 20px;
+            background: list.nth(funcionalidades.$colores, 5);
+            background: linear-gradient(90deg, #000000 0%, #2f306a 80%);
+            background: -webkit-linear-gradient(90deg, #000000 0%, #2f306a 80%);
+            background: -moz-linear-gradient(90deg, #000000 0%, #2f306a 80%);
+            border: 6px groove #ffffff;
+            border-radius: 25px;
+            opacity: 90%;
+            height: 400px;
+    
+            h2 {
+                @include funcionalidades.font(30px, 300);
+                margin-top: -35px;
+                margin-bottom: 60px;
+                color: list.nth(funcionalidades.$colores, 3);
+            }
+    
+            .opiniones-container {
+                @include funcionalidades.flex(flex, 0, space-between, center);
+                gap: 15px;
+    
+                .opinion {
+                    background-color: rgb(0, 0, 0);
+                    border-radius: 10px;
+                    border: 3px groove #ffffff;
+                    padding: 20px;
+                    max-width: 450px;
+                    text-align: left;
+                    height: 200px;
+    
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        color: list.nth(funcionalidades.$colores, 3);
+                    }
+    
+                    .rating {
+                        color: #ffbc00;
+                        font-size: 1.1em;
+                    }
+    
+                    p {
+                        @include funcionalidades.font(12px, 300);
+                        line-height: 1.5;
+                        color: white;
+                    }
                 }
             }
         }
     }
 }
+
+

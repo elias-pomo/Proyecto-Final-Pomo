@@ -90,9 +90,13 @@ header{
                     padding: 10px;
                     list-style: none;
                     align-items: start;
+                    transition: 1s;
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.342);
+                    }
                     a{
                         font-size: 15px;
-                        font-weight: 350;
+                        font-weight: 450;
                         color: white;
                         text-decoration: none;
                     }

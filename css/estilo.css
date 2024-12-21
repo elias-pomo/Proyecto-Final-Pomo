@@ -1,6 +1,46 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+.main-servicios .hero-servicios h1, .main-catering .hero-catering h1, .main-salon .hero-salon h1, .main-index .hero h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 150;
+  border: 2px solid white;
+  width: 50%;
+  padding: 15px;
+  margin: 70px;
+  background-color: rgba(0, 0, 0, 0.4431372549);
+  transition: 1s;
+}
+.main-servicios .hero-servicios h1:hover, .main-catering .hero-catering h1:hover, .main-salon .hero-salon h1:hover, .main-index .hero h1:hover {
+  background-color: white;
+  color: black;
+  border: 2px double black;
+  transform: scale(1.3);
+  border-radius: 15px;
+}
+
+.main-servicios .hero-servicios h2, .main-servicios .info-servicios h2, .main-servicios .promo-infantil h2, .main-servicios .boda h2, .main-servicios .candybar-servicios h2, .main-catering .info-catering h2, .main-catering .candybar h2, .main-salon .galeria-salon h2, .main-salon .galeria-salon2 h2 {
+  text-align: center;
+  font-size: 25px;
+  width: auto;
+  padding: 15px;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.4431372549);
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: 1s;
+}
+.main-servicios .hero-servicios h2:hover, .main-servicios .info-servicios h2:hover, .main-servicios .promo-infantil h2:hover, .main-servicios .boda h2:hover, .main-servicios .candybar-servicios h2:hover, .main-catering .info-catering h2:hover, .main-catering .candybar h2:hover, .main-salon .galeria-salon h2:hover, .main-salon .galeria-salon2 h2:hover {
+  background-color: white;
+  color: black;
+  border: 2px double black;
+  transform: scale(1.3);
+  border-radius: 15px;
+}
+
 /* colores
 /* CSS HEX 
 --fuchsia: #ff00ffff;
@@ -115,16 +155,19 @@ header nav .dropdown .dropdown-menu li {
   padding: 10px;
   list-style: none;
   align-items: start;
+  transition: 1s;
+}
+header nav .dropdown .dropdown-menu li:hover {
+  background-color: rgba(0, 0, 0, 0.342);
 }
 header nav .dropdown .dropdown-menu li a {
   font-size: 15px;
-  font-weight: 350;
+  font-weight: 450;
   color: white;
   text-decoration: none;
 }
 
 .main-index .hero {
-  border-top: 5px solid gold;
   text-align: center;
   height: 500px;
   background-image: url(../img/fondo-hero1.jpg);
@@ -135,38 +178,20 @@ header nav .dropdown .dropdown-menu li a {
   justify-content: space-between;
   align-items: center;
 }
-.main-index .hero h1 {
-  color: white;
-  font-size: 60px;
-  font-weight: 150;
-  border: 2px solid white;
-  width: 50%;
-  padding: 15px;
-  margin: 70px;
-  background-color: rgba(0, 0, 0, 0.4431372549);
-  transition: 1s;
-}
-.main-index .hero h1:hover {
-  background-color: white;
-  color: black;
-  border: 2px double black;
-  transform: scale(1.3);
-  border-radius: 15px;
-}
 .main-index .hero div {
   background-color: rgba(0, 0, 0, 0.4431372549);
   width: 100%;
 }
 .main-index .hero div h2 {
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 250;
   text-shadow: 1px 2px 16px rgb(0, 0, 0);
 }
 .main-index .hero div p {
   color: white;
+  font-size: 25px;
   font-weight: 300;
-  font-size: 30px;
   text-shadow: 2px 3px 16px #170141;
 }
 .main-index .galeria {
@@ -183,32 +208,35 @@ header nav .dropdown .dropdown-menu li a {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .main-index .galeria .texto1 {
   height: auto;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .main-index .galeria .texto1 h2 {
   color: white;
   margin: 50px;
   font-family: "Newsreader", serif;
   font-style: italic;
-  font-weight: 250;
   font-size: 30px;
+  font-weight: 250;
 }
 .main-index .galeria .texto1 div p {
   color: white;
-  font-weight: 300;
   font-size: 20px;
+  font-weight: 300;
 }
 .main-index .galeria .tarjetas {
   margin: 70px 0px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .main-index .galeria .tarjetas .grid-item img {
   height: 80%;
@@ -225,7 +253,7 @@ header nav .dropdown .dropdown-menu li a {
 .main-index .galeria .tarjetas .grid-item h3 {
   position: absolute;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5333333333);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   top: 560px;
 }
 .main-index .info {
@@ -240,6 +268,7 @@ header nav .dropdown .dropdown-menu li a {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: 0;
   align-items: center;
   box-shadow: 3px 3px 50px -8px rgb(255, 255, 255);
   -webkit-box-shadow: 3px 3px 50px -8px rgb(255, 255, 255);
@@ -265,10 +294,12 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-index .info .tarjetas2 {
   display: flex;
+  flex-direction: 0;
   justify-content: space-around;
+  align-items: center;
 }
 .main-index .info .tarjetas2 div {
-  background-color: rgba(0, 0, 0, 0.7529411765);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   opacity: 80%;
   margin: 20px;
   border: thick double white;
@@ -279,9 +310,9 @@ header nav .dropdown .dropdown-menu li a {
   width: 20%;
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   transition: all 2s;
 }
 .main-index .info .tarjetas2 div:hover {
@@ -293,21 +324,19 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-index .info .tarjetas2 h3 {
   font-size: 25px;
+  font-weight: 250;
   padding: 20px;
   color: white;
-  font-weight: 250;
   text-shadow: 1px 1px 1px #e4d9ff;
 }
 .main-index .info .tarjetas2 p {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   color: white;
   text-shadow: none;
   padding: 0px 10px 0px 10px;
-  font-weight: 250;
 }
-
-.comida {
+.main-index .comida {
   background: radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
   background: -webkit-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
   background: -moz-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
@@ -315,11 +344,11 @@ header nav .dropdown .dropdown-menu li a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
-.comida h2 {
-  color: rgb(0, 0, 0);
+.main-index .comida h2 {
+  color: black;
   border: 10px double rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 35px;
@@ -329,29 +358,29 @@ header nav .dropdown .dropdown-menu li a {
   padding: 20px;
   transition: 1s;
 }
-.comida h2:hover {
+.main-index .comida h2:hover {
   border-radius: 50px;
   transform: scale(1.2);
 }
-.comida h3 {
+.main-index .comida h3 {
   color: white;
   text-shadow: 1px 1px 1px gold;
   font-size: 25px;
   font-weight: 250;
 }
-.comida .comida1 {
+.main-index .comida .comida1 {
   height: auto;
   display: flex;
   justify-content: space-between;
   margin: 80px;
 }
-.comida .comida1 div {
+.main-index .comida .comida1 div {
   text-align: justify;
   opacity: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   border: 10px double rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.938);
   box-shadow: 0px 0px 24px 0px rgba(255, 255, 255, 0.57);
@@ -363,31 +392,31 @@ header nav .dropdown .dropdown-menu li a {
   margin: 0px 100px;
   transition: 1s;
 }
-.comida .comida1 div:hover {
+.main-index .comida .comida1 div:hover {
   border-radius: 50px;
   transform: scale(1.2);
 }
-.comida .comida1 div:hover img {
+.main-index .comida .comida1 div:hover img {
   transition: 1s;
   border-radius: 40px;
 }
-.comida .comida1 div img {
+.main-index .comida .comida1 div img {
   width: 100%;
   height: 220px;
 }
-.comida .comida1 div p {
-  color: rgb(0, 0, 0);
+.main-index .comida .comida1 div p {
+  color: black;
   font-size: 100%;
   font-weight: 300;
 }
-.comida .comida1 div a {
+.main-index .comida .comida1 div a {
   text-decoration: none;
   font-size: 25px;
+  font-weight: 300;
   padding: 10px;
   margin: 10px;
-  font-weight: 300;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: black;
   border-radius: 5px;
   border: 2px, solid, rgb(0, 0, 0);
   box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.57);
@@ -396,28 +425,28 @@ header nav .dropdown .dropdown-menu li a {
   padding: 4px;
   transition: 2s;
 }
-.comida .comida1 div a:hover {
+.main-index .comida .comida1 div a:hover {
   background-color: rgba(255, 217, 0, 0.664);
-  color: #000000;
+  color: black;
   border-radius: 35px;
   width: 70%;
 }
-
-.opinioness {
+.main-index .opinioness {
   background-image: url(../img/fondo-desenfoque2.jpg);
   background-size: cover;
   border-top: 5px solid white;
   object-fit: cover;
   height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: 0;
+  justify-content: space-between;
   align-items: center;
 }
-.opinioness .opiniones {
+.main-index .opinioness .opiniones {
   margin: 50px;
   text-align: center;
   padding: 50px 20px;
-  background: #000000;
+  background: black;
   background: linear-gradient(90deg, #000000 0%, #2f306a 80%);
   background: -webkit-linear-gradient(90deg, #000000 0%, #2f306a 80%);
   background: -moz-linear-gradient(90deg, #000000 0%, #2f306a 80%);
@@ -426,19 +455,21 @@ header nav .dropdown .dropdown-menu li a {
   opacity: 90%;
   height: 400px;
 }
-.opinioness .opiniones h2 {
-  font-size: 35px;
-  font-weight: 200;
+.main-index .opinioness .opiniones h2 {
+  font-size: 30px;
+  font-weight: 300;
   margin-top: -35px;
   margin-bottom: 60px;
   color: white;
 }
-.opinioness .opiniones .opiniones-container {
+.main-index .opinioness .opiniones .opiniones-container {
   display: flex;
+  flex-direction: 0;
   justify-content: space-between;
+  align-items: center;
   gap: 15px;
 }
-.opinioness .opiniones .opiniones-container .opinion {
+.main-index .opinioness .opiniones .opiniones-container .opinion {
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   border: 3px groove #ffffff;
@@ -447,24 +478,24 @@ header nav .dropdown .dropdown-menu li a {
   text-align: left;
   height: 200px;
 }
-.opinioness .opiniones .opiniones-container .opinion h3 {
-  font-size: 25px;
+.main-index .opinioness .opiniones .opiniones-container .opinion h3 {
+  font-size: 20px;
   margin-bottom: 10px;
-  color: #c2b4b4;
+  color: white;
 }
-.opinioness .opiniones .opiniones-container .opinion .rating {
+.main-index .opinioness .opiniones .opiniones-container .opinion .rating {
   color: #ffbc00;
   font-size: 1.1em;
 }
-.opinioness .opiniones .opiniones-container .opinion p {
-  font-size: 15px;
+.main-index .opinioness .opiniones .opiniones-container .opinion p {
+  font-size: 12px;
   font-weight: 300;
   line-height: 1.5;
   color: white;
 }
 
 .main-salon {
-  background: #0b032c;
+  background: #45006d;
   background: linear-gradient(91deg, #0b032c 50%, #dfba00 200%);
   background: -webkit-linear-gradient(91deg, #0b032c 50%, #dfba00 200%);
   background: -moz-linear-gradient(91deg, #0b032c 50%, #dfba00 200%);
@@ -477,66 +508,30 @@ header nav .dropdown .dropdown-menu li a {
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-}
-.main-salon .hero-salon div {
-  margin-top: 75px;
-  border: 6px double white;
-  background-color: rgba(27, 4, 53, 0.3215686275);
-  width: 50%;
-  transition: 1s;
-}
-.main-salon .hero-salon div:hover {
-  background-color: white;
-  color: black;
-  border: 2px double black;
-  transform: scale(1.3);
-  border-radius: 15px;
-}
-.main-salon .hero-salon div h1 {
-  font-size: 60px;
-  font-weight: 250;
-  color: white;
-  text-shadow: -3px 1px 0px rgba(158, 17, 233, 0.6);
-  transition: 1s;
-}
-.main-salon .hero-salon div h1:hover {
-  background-color: white;
-  color: black;
-  border-radius: 15px;
+  align-items: center;
 }
 .main-salon .hero-salon p {
-  background-color: rgba(0, 0, 0, 0.4745098039);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   font-size: 20px;
-  margin-bottom: 30px;
   font-weight: 350;
-  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  color: white;
   width: 100%;
 }
 .main-salon .galeria-salon {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: 0;
   align-items: center;
+  text-align: center;
   height: auto;
   background: radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
   background: -webkit-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
   background: -moz-radial-gradient(ellipse farthest-side at center center, #45006d 0%, #000000 80%);
 }
-.main-salon .galeria-salon h2 {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3215686275);
-  font-size: 35px;
-  padding: 5px;
-  font-weight: 200;
-  border-top: 3px double white;
-  border-bottom: 3px double white;
-  width: 60%;
-  margin: 40px;
-}
 .main-salon .galeria-salon p {
-  color: rgb(0, 0, 0);
+  color: black;
   font-size: 20px;
   font-weight: 250;
   background-color: rgba(255, 255, 255, 0.836);
@@ -566,15 +561,6 @@ header nav .dropdown .dropdown-menu li a {
   justify-content: space-between;
   align-items: center;
 }
-.main-salon .galeria-salon2 h2 {
-  color: white;
-  font-size: 30px;
-  padding: 5px;
-  margin: 50px;
-  border: 3px double white;
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0.521);
-}
 .main-salon .galeria-salon2 .carta-salon {
   display: flex;
   flex-direction: row-reverse;
@@ -597,9 +583,9 @@ header nav .dropdown .dropdown-menu li a {
   height: 500px;
   color: white;
   font-size: 110%;
-  font-variant: small-caps;
   font-weight: 450;
-  background-color: rgba(0, 0, 0, 0.4941176471);
+  font-variant: small-caps;
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border: 2px solid white;
   border-radius: 25px;
   box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
@@ -624,6 +610,7 @@ header nav .dropdown .dropdown-menu li a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: 0;
 }
 .main-salon .muestra-salon .seccion-muestra .tarjetas-muestra2 {
   margin-top: 50px;
@@ -631,6 +618,7 @@ header nav .dropdown .dropdown-menu li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: 0;
 }
 .main-salon .muestra-salon .seccion-muestra .tarjetas-muestra2 img {
   border: 3px solid white;
@@ -647,7 +635,7 @@ header nav .dropdown .dropdown-menu li a {
   margin-right: 50px;
   color: white;
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 250;
   width: auto;
   height: 300px;
@@ -670,14 +658,14 @@ header nav .dropdown .dropdown-menu li a {
 .main-salon .info-salon .info-salon-0 {
   height: 600px;
   display: flex;
-  text-align: center;
-  align-self: center;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   margin: 50px;
 }
 .main-salon .info-salon .info-salon-0 .info-salon-1 {
-  background-color: rgba(0, 0, 0, 0.6980392157);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
   -webkit-box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
   -moz-box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
@@ -695,7 +683,7 @@ header nav .dropdown .dropdown-menu li a {
   font-weight: 300;
 }
 .main-salon .info-salon .info-salon-0 .info-salon-2 {
-  background-color: rgba(0, 0, 0, 0.6980392157);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
   -webkit-box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
   -moz-box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
@@ -704,17 +692,18 @@ header nav .dropdown .dropdown-menu li a {
   height: 350px;
 }
 .main-salon .info-salon .info-salon-0 .info-salon-2 h3 {
+  font-size: 45px;
   font-weight: 250;
-  font-size: 50px;
 }
 .main-salon .info-salon .info-salon-0 .info-salon-2 p {
   color: white;
   font-size: 25px;
+  font-weight: 300;
   padding: 0px;
   font-weight: 300;
 }
 .main-salon .info-salon .info-salon-0 .info-salon-3 {
-  background-color: rgba(0, 0, 0, 0.6980392157);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border-radius: 35px;
   box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
   -webkit-box-shadow: 0px 0px 4px 3px rgba(255, 215, 0, 0.75);
@@ -729,6 +718,7 @@ header nav .dropdown .dropdown-menu li a {
 .main-salon .info-salon .info-salon-0 .info-salon-3 p {
   color: white;
   font-size: 25px;
+  font-weight: 300;
   padding: 0px;
   font-weight: 300;
 }
@@ -748,35 +738,18 @@ header nav .dropdown .dropdown-menu li a {
   justify-content: space-between;
   align-items: center;
 }
-.main-catering .hero-catering h1 {
-  color: white;
-  font-size: 40px;
-  font-weight: 150;
-  border: 2px solid white;
-  width: 50%;
-  padding: 15px;
-  margin: 70px;
-  background-color: rgba(0, 0, 0, 0.4431372549);
-  transition: 1s;
-}
-.main-catering .hero-catering h1:hover {
-  background-color: white;
-  color: black;
-  border: 2px double black;
-  transform: scale(1.3);
-  border-radius: 15px;
-}
 .main-catering .hero-catering p {
   color: white;
   font-size: 20px;
-  width: 100%;
   font-weight: 300;
-  background-color: rgba(0, 0, 0, 0.431372549);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border-top: 2px solid gold;
 }
 .main-catering .opciones {
   height: 600px;
   display: flex;
+  flex-direction: 0;
   justify-content: space-around;
   align-items: center;
 }
@@ -785,6 +758,7 @@ header nav .dropdown .dropdown-menu li a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: 0;
   height: 430px;
   width: 402px;
   border: 2px solid white;
@@ -805,8 +779,8 @@ header nav .dropdown .dropdown-menu li a {
 .main-catering .opciones .card .card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .main-catering .opciones .card .card-body h5 {
   font-size: 25px;
@@ -830,45 +804,26 @@ header nav .dropdown .dropdown-menu li a {
   font-weight: 350;
   display: flex;
   flex-direction: column;
+  justify-content: 0;
   align-items: center;
   border-top: 3px solid gold;
 }
-.main-catering .info-catering h2 {
-  text-align: center;
-  font-size: 35px;
-  width: 30%;
-  padding: 5px;
-  margin: 30px;
-  background-color: rgba(0, 0, 0, 0.4431372549);
-  color: rgb(255, 255, 255);
-  font-weight: 300;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  transition: 1s;
-}
-.main-catering .info-catering h2:hover {
-  background-color: white;
-  color: black;
-  border: 2px double black;
-  transform: scale(1.3);
-  border-radius: 15px;
-}
 .main-catering .info-catering .info-catering1 {
   height: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   border-bottom: 3px solid gold;
 }
 .main-catering .info-catering .info-catering1 h3 {
   text-align: center;
   font-size: 20px;
-  padding: 10px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.7254901961);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border-bottom: 2px solid gold;
 }
 .main-catering .info-catering .info-catering1 p {
   font-size: 15px;
-  font-weight: 150;
+  font-weight: 250;
 }
 .main-catering .info-catering .info-catering1 .img-catering {
   margin: 50px;
@@ -887,6 +842,7 @@ header nav .dropdown .dropdown-menu li a {
   margin: 30px;
   text-align: center;
   font-size: 40px;
+  font-weight: 250;
   padding: 10px;
   font-weight: 250;
   background-color: rgba(0, 0, 0, 0.4509803922);
@@ -894,8 +850,8 @@ header nav .dropdown .dropdown-menu li a {
   transition: 1s;
 }
 .main-catering .info-catering h3:hover {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   border: 2px double black;
   transform: scale(1.3);
   border-radius: 15px;
@@ -909,6 +865,7 @@ header nav .dropdown .dropdown-menu li a {
 .main-catering .info-catering .grid-catering .item-catering1 {
   display: flex;
   flex-direction: column;
+  justify-content: 0;
   align-items: center;
 }
 .main-catering .info-catering .grid-catering .item-catering1 p {
@@ -930,35 +887,16 @@ header nav .dropdown .dropdown-menu li a {
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border-top: 3px solid gold;
-}
-.main-catering .candybar h2 {
-  text-align: center;
-  font-size: 35px;
-  width: 30%;
-  padding: 5px;
-  margin: 30px;
-  background-color: rgba(0, 0, 0, 0.4431372549);
-  color: rgb(255, 255, 255);
-  font-weight: 300;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  transition: 1s;
-}
-.main-catering .candybar h2:hover {
-  background-color: white;
-  color: black;
-  border: 2px double black;
-  transform: scale(1.3);
-  border-radius: 15px;
 }
 .main-catering .candybar .info-candybar {
   text-align: center;
   font-size: 30px;
-  padding: 10px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.7254901961);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border-bottom: 2px solid gold;
   display: flex;
   flex-direction: column;
@@ -970,7 +908,7 @@ header nav .dropdown .dropdown-menu li a {
   font-size: 30px;
   padding: 10px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.4509803922);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border-bottom: 2px solid gold;
 }
 .main-catering .candybar .info-candybar p {
@@ -999,9 +937,9 @@ header nav .dropdown .dropdown-menu li a {
   margin: 30px;
   text-align: center;
   font-size: 40px;
-  padding: 10px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.5411764706);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4431372549);
   transition: 1s;
 }
 .main-catering .candybar h3:hover {
@@ -1054,67 +992,31 @@ header nav .dropdown .dropdown-menu li a {
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-}
-.main-servicios .hero-servicios div h1 {
-  font-size: 40px;
-  font-weight: 250;
-  margin-top: 75px;
-  border: 3px double white;
-  background-color: rgba(27, 4, 53, 0.3568627451);
-  width: 100%;
-  padding: 15px;
-  transition: 2s;
-}
-.main-servicios .hero-servicios div h1:hover {
-  background-color: white;
-  color: black;
-  border: 2px double black;
-  transform: scale(1.3);
-  border-radius: 15px;
-}
-.main-servicios .hero-servicios h2 {
-  font-size: 25px;
-  font-weight: 300;
-  text-shadow: 1px 1px 1px black;
-  border: 3px double white;
-  background-color: rgba(27, 4, 53, 0.3568627451);
-  width: 20%;
+  align-items: center;
 }
 .main-servicios .hero-servicios h3 {
   font-size: 22px;
   font-weight: 300;
   text-shadow: 1px 1px 1px black;
   border-top: 3px solid white;
-  background-color: rgba(0, 0, 0, 0.3568627451);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   width: 100%;
 }
 .main-servicios .info-servicios {
   height: auto;
   border-bottom: 5px solid gold;
   display: flex;
-  align-items: center;
   flex-direction: column;
-}
-.main-servicios .info-servicios h2 {
-  text-align: center;
-  font-size: 30px;
-  padding: 5px;
-  margin: 50px;
-  background-color: rgba(255, 255, 255, 0.6901960784);
-  color: black;
-  font-weight: 300;
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 15px;
-  box-shadow: 1px -1px 5px 3px rgba(0, 0, 0, 0.75);
+  justify-content: 0;
+  align-items: center;
 }
 .main-servicios .info-servicios p {
   text-align: center;
   font-size: 15px;
-  padding: 10px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.7254901961);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border: 2px solid rgb(255, 255, 255);
   width: 50%;
 }
@@ -1124,13 +1026,14 @@ header nav .dropdown .dropdown-menu li a {
   text-align: left;
   display: flex;
   flex-direction: column;
+  justify-content: 0;
   align-items: center;
 }
 .main-servicios .servicios-infantiles h2 {
   margin-top: 50px;
   font-size: 25px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border: 1px solid white;
   padding: 20px;
   transition: 2s;
@@ -1144,8 +1047,8 @@ header nav .dropdown .dropdown-menu li a {
   margin: 30px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   width: auto;
 }
 .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil {
@@ -1157,7 +1060,7 @@ header nav .dropdown .dropdown-menu li a {
   width: auto;
   padding: 10px;
   margin: 20px;
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border: 2px solid white;
   text-align: justify;
   transition: 2s;
@@ -1177,8 +1080,8 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil h4 {
   font-size: 15px;
-  padding: 10px;
   font-weight: 350;
+  padding: 10px;
 }
 .main-servicios .servicios-infantiles .tarjeta-infantil .fiesta-infantil p {
   text-align: center;
@@ -1192,28 +1095,14 @@ header nav .dropdown .dropdown-menu li a {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: 0;
   align-items: center;
   border-top: 5px solid gold;
   border-bottom: 5px solid gold;
 }
-.main-servicios .promo-infantil h2 {
-  font-size: 30px;
-  font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.4784313725);
-  border: 2px solid white;
-  margin: 50px;
-  width: 50%;
-  transition: 2s;
-}
-.main-servicios .promo-infantil h2:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-  border-radius: 35px;
-  transform: scale(1.3);
-}
 .main-servicios .promo-infantil .promos {
   display: flex;
+  flex-direction: 0;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -1223,7 +1112,7 @@ header nav .dropdown .dropdown-menu li a {
   border: 2px solid white;
   height: auto;
   width: 300px;
-  background-color: rgba(0, 0, 0, 0.589);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
@@ -1250,6 +1139,7 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-servicios .promo-infantil .promos .promo1 h4 {
   font-size: 25px;
+  font-weight: 350;
   padding: 10px;
   font-weight: 350;
 }
@@ -1274,14 +1164,6 @@ header nav .dropdown .dropdown-menu li a {
   align-items: center;
   border-bottom: 5px solid gold;
 }
-.main-servicios .boda h2 {
-  font-size: 35px;
-  font-weight: 250;
-  margin: 50px;
-  padding: 15px;
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.4431372549);
-}
 .main-servicios .boda div {
   display: flex;
   flex-direction: row;
@@ -1292,7 +1174,7 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-servicios .boda div .evento1 {
   margin: 50px;
-  background-color: rgba(0, 0, 0, 0.5725490196);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   height: auto;
   width: auto;
   box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
@@ -1307,7 +1189,7 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-servicios .boda div .evento1:hover {
   background-color: white;
-  color: #000000;
+  color: black;
   border: 2px solid black;
   transform: scale(1.1);
 }
@@ -1321,8 +1203,8 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-servicios .boda div .evento1 h4 {
   font-size: 15px;
-  text-decoration: underline 1px solid gold;
   font-weight: 350;
+  text-decoration: underline 1px solid gold;
 }
 .main-servicios .boda div .evento1 p {
   text-align: justify;
@@ -1337,21 +1219,15 @@ header nav .dropdown .dropdown-menu li a {
 .main-servicios .candybar-servicios {
   display: flex;
   flex-direction: column;
+  justify-content: 0;
   align-items: center;
-}
-.main-servicios .candybar-servicios h2 {
-  padding: 15px;
-  font-size: 40px;
-  font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.4784313725);
-  border: 2px solid white;
-  margin: 50px;
 }
 .main-servicios .candybar-servicios div {
   display: flex;
-  margin: 30px;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: 0;
+  margin: 30px;
   width: 90%;
 }
 .main-servicios .candybar-servicios div div {
@@ -1384,7 +1260,7 @@ header nav .dropdown .dropdown-menu li a {
   text-align: center;
   font-size: 50px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.7725490196);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border-bottom: 2px solid white;
   margin-bottom: 50px;
 }
@@ -1392,26 +1268,27 @@ header nav .dropdown .dropdown-menu li a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   width: 100%;
   height: auto;
-  align-items: center;
 }
 .main-servicios .info-final-servicios .flex-servicios div {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: 0;
   width: 100%;
   margin: 20px;
 }
 .main-servicios .info-final-servicios .flex-servicios div .traer {
   border: 2px solid white;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.8235294118);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
 }
 .main-servicios .info-final-servicios .flex-servicios div .traer h3 {
   text-align: center;
@@ -1430,11 +1307,11 @@ header nav .dropdown .dropdown-menu li a {
   border: 2px solid white;
   height: auto;
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.8235294118);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
 }
 .main-servicios .info-final-servicios .flex-servicios div .aparte h3 {
   text-align: center;
@@ -1456,7 +1333,7 @@ header nav .dropdown .dropdown-menu li a {
   border: 2px solid white;
   height: auto;
   width: 80%;
-  background-color: rgba(0, 0, 0, 0.8235294118);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1472,8 +1349,8 @@ header nav .dropdown .dropdown-menu li a {
 }
 .main-servicios .info-final-servicios .flex-servicios .saber h4 {
   font-size: 10px;
-  height: 60px;
   font-weight: 350;
+  height: 60px;
 }
 .main-servicios .info-final-servicios .flex-servicios .saber p {
   text-align: center;
@@ -1494,27 +1371,28 @@ header nav .dropdown .dropdown-menu li a {
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: 0;
   align-items: center;
 }
 .main-formulario .hero-formulario .hero-1 {
   margin: 50px;
-  background-color: rgba(0, 0, 0, 0.7098039216);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
   border-radius: 25px;
 }
 .main-formulario .hero-formulario .hero-1 h1 {
-  font-weight: 250;
   font-size: 35px;
+  font-weight: 250;
 }
 .main-formulario .hero-formulario .hero-1 h2 {
-  font-weight: 250;
   font-size: 20px;
+  font-weight: 250;
 }
 .main-formulario .hero-formulario .hero-1 h3 {
+  font-size: 25px;
   font-weight: 250;
-  font-size: 20px;
 }
 .main-formulario .container-formulario {
   color: white;
@@ -1523,7 +1401,7 @@ header nav .dropdown .dropdown-menu li a {
   margin: 40px auto;
   padding: 20px;
   font-weight: 250;
-  background-color: rgba(0, 0, 0, 0.7098039216);
+  background-color: rgba(0, 0, 0, 0.4431372549);
   box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 1px -1px 5px 3px rgba(255, 255, 255, 0.75);
@@ -1532,11 +1410,13 @@ header nav .dropdown .dropdown-menu li a {
 .main-formulario .container-formulario form {
   display: flex;
   flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
 }
 .main-formulario .container-formulario form label {
   color: white;
-  font-weight: 350;
   font-size: 15px;
+  font-weight: 350;
   margin-bottom: 5px;
 }
 .main-formulario .container-formulario form input {
@@ -1558,13 +1438,13 @@ header nav .dropdown .dropdown-menu li a {
   padding: 12px;
   font-size: 12px;
   color: white;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.4431372549);
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .main-formulario .container-formulario form buttonhover {
-  background-color: #555;
+  background-color: rgba(0, 0, 0, 0.4431372549);
 }
 
 footer {
@@ -1843,7 +1723,7 @@ footer .redes a img {
     height: auto;
   }
   .main-salon .hero-salon {
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1995,6 +1875,15 @@ footer .redes a img {
   .main-servicios .info-final-servicios div .traer h3 {
     font-size: 10px;
   }
+  .main-formulario .hero-formulario .hero-1 h1 {
+    font-size: 25px;
+  }
+  .main-formulario .hero-formulario .hero-1 h2 {
+    font-size: 20px;
+  }
+  .main-formulario .hero-formulario .hero-1 h3 {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 500px) {
   header {
@@ -2083,7 +1972,7 @@ footer .redes a img {
   .main-catering .candybar h2 {
     font-size: 15px;
   }
-  .main-servicios .hero-servicios div h1 {
+  .main-servicios .hero-servicios h1 {
     font-size: 25px;
   }
   .main-servicios .hero-servicios h2 {
